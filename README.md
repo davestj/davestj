@@ -1,7 +1,7 @@
 
 # 🚀 David St. John – 2025 DevSecOps & Cloud Architecture Journey
 
-Welcome to my self-driven, certification-based journey toward mastering DevSecOps, Cloud Architecture, and Infrastructure as Code at age 50. This roadmap includes hands-on labs, real-world cloud migration simulations, and lab-driven certifications from Azure, AWS, Kubernetes, and open-source tools.
+Welcome to my self-driven, certification-based journey toward mastering DevSecOps, Cloud Architecture, and Infrastructure as Code. This roadmap includes hands-on labs, real-world cloud migration simulations, and lab-driven certifications from Azure, AWS, Kubernetes, and open-source tools.
 
 ---
 
