@@ -63,15 +63,12 @@ Welcome to my self-driven, certification-based journey toward mastering DevSecOp
 ---
 
 > *“I'm not slowing down — I'm leveling up.”*  
-> — Dave St. John aka DevSecOps++ Warrior
-
 
 ---
 
 ## 🌐 Connect With Me
 
 ### 👤 David St. John
-- X (Twitter): [@KingDavidStJohn](https://x.com/KingDavidStJohn)
 - LinkedIn: [linkedin.com/in/davestj](https://www.linkedin.com/in/davestj)
 
 ### 🧪 Beyond The Horizon Labs (BTHL)
