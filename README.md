@@ -1,78 +1,190 @@
+# 🚀 David St. John – DevSecOps Engineer & Innovation Architect
 
-# 🚀 David St. John – 2025 DevSecOps & Cloud Architecture Journey
-
-Welcome to my self-driven, certification-based journey toward mastering DevSecOps, Cloud Architecture, and Infrastructure as Code. This roadmap includes hands-on labs, real-world cloud migration simulations, and lab-driven certifications from Azure, AWS, Kubernetes, and open-source tools.
-
----
-
-## 📚 Curriculum Overview
-
-### 🧠 Q1 (Jan–Mar)
-- [x] The Complete Python Developer (Andrei Neagoie)
-- [x] Refreshers - Ansible – From Beginner to Expert
-- [x] Refreshers - Terraform for Beginners with Labs
-- [ ] AWS Cloud Practitioner CLF-C02 – *Target: Mar 2025*
-
-### ☁️ Q2 (Apr–Jun)
-- [ ] Master IaC on Azure
-- [ ] AZ-400: Designing & Implementing DevOps
-- [ ] Microsoft Azure: From Zero to Hero
-- [ ] AZ-400 Certification – *Target: Q2 2025*
-
-### 🐳 Q3 (Jul–Sep)
-- [ ] Docker & Kubernetes: The Complete Guide
-- [ ] Kubernetes for Beginners
-- [ ] Kubernetes Certified Application Developer (CKAD)
-- [ ] CKAD Certification – *Target: Q3 2025*
-
-### ☁️ Q4 (Oct–Dec)
-- [ ] Certified Kubernetes Administrator (CKA)
-- [ ] Azure Solutions Architect Ultimate Bundle
-- [ ] AWS Solutions Architect Associate (SAA-C03)
-- [ ] CKA + Azure + AWS SAA Certs – *Target: Q4 2025*
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=20%2B+Years+DevSecOps+Experience;Cloud+Architecture+%26+Infrastructure;Innovation+Through+Technology;Building+The+Future+Today" alt="Typing SVG" />
+</div>
 
 ---
 
-## 🎯 Certification Goals
+## 🌟 Who I Am
 
-- AWS Certified Cloud Practitioner (CLF-C02) – Mar 2025
-- AWS Solutions Architect Associate – Q4 2025
-- Azure DevOps Expert (AZ-400) – Q2 2025
-- Azure Solutions Architect Expert – Q4 2025
-- Certified Kubernetes Application Developer (CKAD) – Q3 2025
-- Certified Kubernetes Administrator (CKA) – Q4 2025
+Senior DevSecOps Engineer with over two decades of experience architecting cloud solutions and pushing the boundaries of what's possible. From early AWS beta testing (2003-2006) to cutting-edge theoretical physics research, I bridge the gap between practical engineering and visionary innovation.
 
----
-
-## 🛠️ Core Tools & Tech
-
-- Python, Bash, GitHub Actions, Ansible, Terraform
-- Docker, Kubernetes, Helm, HL7 / Mirth Connect
-- Azure/Github/Bitbucket Pipelines, Bicep, ARM Templates, IaC
-- AWS IAM, VPC, EC2, Lambda, CloudFormation
+### 🔭 Current Focus
+- **Lead Developer** at [CasterClub.com](https://casterclub.com) - Pioneering next-gen streaming protocols with ICY 2.0 specification
+- **Architect** at [MediaCast.ai](https://mediacast.ai) & [MediaCast.one](https://mediacast.one) - Building next-gen AI-powered streaming infrastructure
+- **Founder** at [Beyond The Horizon Labs](https://beyondthehorizonlabs.com) - Researching advanced theoretical frameworks for future technologies
 
 ---
 
-## 🧪 Custom Home Lab
+## 🛠️ Tech Stack & Expertise
 
-- Raspberry Pi 5, Arduino nodes, Core i7 Mini-ITX
-- Azure + AWS integrated IaC simulations
-- Simulates real-world, highly regulated (HIPAA) cloud migrations
-- Powered by passion, perseverance, and purpose 💥
+### ☁️ Cloud & Infrastructure
+```yaml
+Cloud Platforms:
+  - AWS: 20+ years (Beta Tester 2003-2006)
+  - Azure: Advanced DevOps & Architecture
+  - Google Cloud: Kubernetes & Containerization
+
+Infrastructure as Code:
+  - Terraform / Terragrunt
+  - CloudFormation / CDK
+  - Ansible / Chef
+  - Pulumi
+```
+
+### 🔒 DevSecOps & Automation
+```yaml
+CI/CD:
+  - Jenkins (Groovy DSL)
+  - GitHub Actions
+  - GitLab CI/CD
+  - Azure DevOps
+
+Security & Compliance:
+  - Snyk / SonarQube
+  - Black Duck / Crowdstrike
+  - GDPR / SOC 2 / PCI-DSS / HIPAA
+  - Zero Trust Architecture
+```
+
+### 🐳 Containerization & Orchestration
+```yaml
+Container Tech:
+  - Docker / Docker Compose
+  - Kubernetes (EKS, AKS, GKE)
+  - Helm / ArgoCD
+  - Service Mesh (Istio)
+```
+
+### 💻 Development
+```yaml
+Languages:
+  - Python (Boto3, FastAPI)
+  - JavaScript/TypeScript (Node.js)
+  - Bash / PowerShell
+  - PHP (Legacy Systems)
+
+Databases:
+  - PostgreSQL / MySQL / Aurora
+  - MongoDB / CouchDB
+  - Redis / ElasticSearch
+  - MSSQL
+```
 
 ---
 
-> *“I'm not slowing down — I'm leveling up.”*  
+## 🚀 Featured Projects
+
+### 📡 CasterClub.com
+**Internet Radio Community & ICY 2.0 Protocol Development**
+- Architecting next-generation streaming metadata protocol (ICY 2.0) for Shoutcast/Icecast
+- Building universal webcasting platform supporting all major streaming formats
+- Developing AI-powered station categorization and discovery tools
+- Implementing real-time metadata parsing and TagStack technology
+- Tech: Node.js, AWS Lambda, OpenSearch, Protocol Development
+
+### 📻 MediaCast.ai & MediaCast.one
+**AI-Powered Next-Gen Streaming Infrastructure**
+- Designed high-availability streaming platform with global CDN
+- Implemented AI-driven content recommendation and optimization
+- Built real-time analytics dashboard with OpenSearch
+- Developed innovative audio processing pipelines with machine learning
+- Tech: AWS CloudFront, ECS, Node.js, Redis, TensorFlow
+
+### 🌌 Beyond The Horizon Labs
+**Advanced Theoretical Research & Development**
+- Developing innovative frameworks for next-generation technologies
+- Researching applications of quantum computing in DevOps
+- Building proof-of-concept systems for advanced communication protocols
+- Tech: Python, TensorFlow, Quantum SDKs, Advanced Mathematics
+
+### 🔧 Open Source Contributions
+- **terraform-aws-modules** - Contributing to AWS Terraform modules
+- **kubernetes-sigs** - Kubernetes special interest groups contributor
+- **ansible-collections** - Maintaining Ansible collections for cloud automation
 
 ---
 
-## 🌐 Connect With Me
+## 📊 GitHub Stats
 
-### 👤 David St. John
-- LinkedIn: [linkedin.com/in/davestj](https://www.linkedin.com/in/davestj)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=davestj&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=davestj&theme=tokyonight" alt="GitHub Streak" />
+</div>
 
-### 🧪 Beyond The Horizon Labs (BTHL)
-- X (Twitter): [@BTH_Labs](https://x.com/BTH_Labs)
-- Instagram: [@beyondthehorizonlabs](https://www.instagram.com/beyondthehorizonlabs/)
-- Facebook: [facebook.com/beyondthehorizonlabs](https://www.facebook.com/beyondthehorizonlabs/)
-- LinkedIn: [linkedin.com/company/beyond-the-horizon-labs](https://www.linkedin.com/company/beyond-the-horizon-labs/)
+---
+
+## 🎯 2025 Objectives
+
+### 🏗️ Infrastructure Evolution
+- [ ] Migrate legacy systems to Kubernetes native architectures
+- [ ] Implement GitOps workflows across all projects
+- [ ] Build multi-cloud disaster recovery solutions
+
+### 🔬 Innovation Projects
+- [ ] Launch BTHL Research Platform v2.0
+- [ ] Open-source advanced DevOps automation tools
+- [ ] Develop AI-powered infrastructure optimization systems
+
+### 📚 Continuous Learning
+- [ ] Advanced Kubernetes (CKA/CKAD)
+- [ ] AWS Solutions Architect Professional
+- [ ] Quantum Computing Fundamentals
+
+---
+
+## 💡 Philosophy
+
+> *"Innovation isn't just about using the latest tools—it's about solving tomorrow's problems today. Whether I'm optimizing a CI/CD pipeline or researching theoretical physics applications, I believe in pushing boundaries and building systems that scale beyond current limitations."*
+
+---
+
+## 🤝 Let's Connect
+
+### 👤 Personal
+- 📧 Email: [davestj@gmail.com](mailto:davestj@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/davestj](https://www.linkedin.com/in/davestj)
+- 🌐 Portfolio: [davidstj.com](https://www.davidstj.com)
+- 💻 GitHub: [github.com/davestj](https://github.com/davestj)
+- 🗂️ Bitbucket: [bitbucket.org/davestj](https://bitbucket.org/davestj)
+
+### 🏢 Beyond The Horizon Labs
+- 🐦 X (Twitter): [@BTH_Labs](https://x.com/BTH_Labs)
+- 📸 Instagram: [@beyondthehorizonlabs](https://www.instagram.com/beyondthehorizonlabs)
+- 👥 Facebook: [Beyond The Horizon Labs](https://www.facebook.com/beyondthehorizonlabs)
+- 💼 LinkedIn: [BTHL Company Page](https://www.linkedin.com/company/beyond-the-horizon-labs)
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=davestj&color=blueviolet" alt="Profile Views" />
+  
+  ### 🚀 "Not just DevOps. DevSecOps with a vision for tomorrow."
+</div>
+
+---
+
+### 🏆 Recent Achievements
+
+- 🥇 Led development of ICY 2.0 protocol specification for modern streaming metadata
+- 🎯 Reduced infrastructure costs by 45% through optimization
+- 🔒 Achieved SOC 2 Type II compliance for multiple organizations
+- 🚀 Pioneered serverless architectures handling 1M+ requests/day
+- 💡 Filed provisional patent for innovative monitoring system
+
+---
+
+### 📝 Latest Blog Posts
+<!-- BLOG-POST-LIST:START -->
+- [ICY 2.0: The Future of Streaming Metadata](https://davidstj.com/blog/icy-2-protocol)
+- [Building Resilient Infrastructure with Terraform and AWS](https://davidstj.com/blog/resilient-infrastructure)
+- [AI-Powered Stream Discovery: The Next Evolution](https://mediacast.ai/blog/ai-stream-discovery)
+- [Quantum Computing Applications in Cloud Architecture](https://beyondthehorizonlabs.com/quantum-cloud)
+<!-- BLOG-POST-LIST:END -->
+
+---
+
+<div align="center">
+  <b>⚡ Fun fact:</b> I was one of the original AWS public beta testers before their official launch in 2006!
+</div>
