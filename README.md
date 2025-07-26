@@ -7,7 +7,9 @@
 <div align="center">
   
   ### 💼 Currently Raising Series A for 3 Self-Funded Ventures
-  **[CasterClub](https://casterclub.com) ($5M) | [MediaCast.ai](https://mediacast.ai) ($8M) | [BTHL](https://beyondthehorizonlabs.com) ($10M)**
+  **[CasterClub](https://casterclub.com) ($5M) | [MediaCast Suite](https://mediacast1.ai) ($8M) | [BTHL](https://beyondthehorizonlabs.com) ($10M)**
+  
+  **MediaCast Suite includes**: [MediaCast1.ai](https://mediacast1.ai) • [MediaCast.one](https://mediacast.one) • [MediaCast.studio](https://mediacast.studio)
   
   [📧 Investment Inquiries](mailto:investors@beyondthehorizonlabs.com)
   
@@ -33,9 +35,15 @@ In 2025, I'm simultaneously launching three self-funded ventures that represent 
 - **CasterClub** & **MediaCast** - Rebooting and modernizing my legacy streaming platforms
 - **Beyond The Horizon Labs** - Breaking new ground in theoretical research and advanced technology
 
+### 🔗 Integrated Ecosystem Approach
+All three ventures are designed to work synergistically:
+- **CasterClub** stations can broadcast using **MediaCast.studio** tools and AI teleprompters
+- **MediaCast1.ai** powers the AI backend for both platforms
+- **BTHL** research drives innovation across all ventures
+
 ### 🔭 Current Focus
 - **Founder & Lead Developer** at [CasterClub.com](https://casterclub.com) - Pioneering next-gen streaming protocols with ICY 2.0 specification (Reboot 2025)
-- **Founder & Architect** at [MediaCast.ai](https://mediacast.ai) & [MediaCast.one](https://mediacast.one) - Building AI-powered streaming infrastructure (Reboot 2025)
+- **Founder & Architect** at [MediaCast1.ai](https://mediacast1.ai), [MediaCast.one](https://mediacast.one) & [MediaCast.studio](https://mediacast.studio) - Building AI-powered streaming infrastructure & broadcast tools (Reboot 2025)
 - **Founder & Chief Research Officer** at [Beyond The Horizon Labs](https://beyondthehorizonlabs.com) - Researching advanced theoretical frameworks for future technologies (Founded 2025)
 
 ---
@@ -87,12 +95,18 @@ Languages:
   - JavaScript/TypeScript (Node.js)
   - Bash / PowerShell
   - PHP (Legacy Systems)
+  - C++ (Hardware/DSP Programming)
 
 Databases:
   - PostgreSQL / MySQL / Aurora
   - MongoDB / CouchDB
   - Redis / ElasticSearch
   - MSSQL
+
+Hardware Development:
+  - Embedded Systems (AI Teleprompter)
+  - DSP Programming (Audio Processing)
+  - IoT Integration (Broadcast Equipment)
 ```
 
 ---
@@ -109,15 +123,20 @@ Databases:
 - **Status**: Active development, seeking Series A funding
 - Tech: Node.js, AWS Lambda, OpenSearch, Protocol Development
 
-### 📻 MediaCast.ai & MediaCast.one (Reboot 2025)
-**AI-Powered Next-Gen Streaming Infrastructure**
-*Self-funded AI streaming venture - Evolution of MediaCast1 (2000-2006)*
-- Designed high-availability streaming platform with global CDN
-- Implemented AI-driven content recommendation and optimization
+### 📻 MediaCast1.ai, MediaCast.one & MediaCast.studio (Reboot 2025)
+**AI-Powered Next-Gen Streaming Infrastructure & Broadcasting Platform**
+*Self-funded AI streaming venture - Evolution of MediaCast1 (2000-2006), now reimagined with AI*
+- **MediaCast1.ai**: Core AI engine for content optimization and streaming
+- **MediaCast.one**: Consumer-facing streaming platform with global CDN
+- **MediaCast.studio**: Next-gen community digital broadcasting platform featuring:
+  - Advanced tools for podcasters with AI integration
+  - AI-powered teleprompter hardware and software solutions
+  - Multi-device mixer and DSP encoder supporting new ICY 2.0 protocol
+  - Live radio and TV broadcasting with AI enhancement
+  - Real-time content processing and optimization
 - Built real-time analytics dashboard with OpenSearch
-- Developed innovative audio processing pipelines with machine learning
 - **Status**: MVP launched, scaling infrastructure
-- Tech: AWS CloudFront, ECS, Node.js, Redis, TensorFlow
+- Tech: AWS CloudFront, ECS, Node.js, Redis, TensorFlow, DSP Processing
 
 ### 🌌 Beyond The Horizon Labs (Founded 2025)
 **Advanced Theoretical Research & Development**
@@ -150,13 +169,20 @@ As a serial entrepreneur who's self-funded all ventures to date, I'm opening doo
 - **Use of Funds**: Protocol standardization, platform scaling, market expansion
 - **Exit Strategy**: Strategic acquisition by streaming platforms or IPO by 2030
 
-#### 🤖 **MediaCast.ai / MediaCast.one** - $8M Series A Target
-**The Opportunity**: AI-powered streaming infrastructure for the next generation
-- **TAM**: $15B streaming technology market with AI integration growing at 25% CAGR
-- **Competitive Edge**: Proprietary AI algorithms reduce bandwidth costs by 40%
-- **Revenue Model**: Platform licensing ($500-5000/mo), AI API access, enterprise solutions
-- **Use of Funds**: AI model training, infrastructure scaling, partnership development
-- **Exit Strategy**: Strategic acquisition by major CDN/cloud providers
+#### 🤖 **MediaCast1.ai / MediaCast.one / MediaCast.studio** - $8M Series A Target
+**The Opportunity**: AI-powered streaming infrastructure & broadcast tools for the next generation
+- **TAM**: $15B streaming technology market + $8B podcasting/broadcasting tools market
+- **Competitive Edge**: 
+  - Proprietary AI algorithms reduce bandwidth costs by 40%
+  - Only platform offering integrated hardware (AI teleprompter) + software solution
+  - Seamless integration with new ICY 2.0 protocol
+- **Revenue Model**: 
+  - Platform licensing ($500-5000/mo)
+  - Hardware sales (AI teleprompter units $2,999-9,999)
+  - Studio suite subscriptions ($99-999/mo)
+  - Enterprise solutions
+- **Use of Funds**: AI model training, hardware manufacturing, infrastructure scaling
+- **Exit Strategy**: Strategic acquisition by major CDN/cloud providers or broadcasting equipment manufacturers
 
 #### 🌌 **Beyond The Horizon Labs** - $10M Seed/Series A Target
 **The Opportunity**: Pioneering theoretical physics applications in real-world technology
@@ -175,7 +201,7 @@ As a serial entrepreneur who's self-funded all ventures to date, I'm opening doo
 
 ### 📈 Current Traction (Jan 2025)
 - **CasterClub**: 500+ beta stations testing ICY 2.0 protocol
-- **MediaCast.ai**: Processing 100K+ requests/day in beta
+- **MediaCast Suite**: 100K+ requests/day, 50+ podcasters in beta, 10 teleprompter pre-orders
 - **BTHL**: 2 provisional patents filed, 3 research papers in progress
 - **Combined**: $50K+ MRR across ventures, 10+ enterprise LOIs
 
@@ -187,7 +213,7 @@ As a serial entrepreneur who's self-funded all ventures to date, I'm opening doo
 ### 👥 Building World-Class Teams
 Post-funding, we're ready to hire:
 - **CasterClub**: 5 engineers, 2 protocol specialists, 3 business development
-- **MediaCast**: 8 ML engineers, 4 infrastructure engineers, 2 data scientists  
+- **MediaCast Suite**: 8 ML engineers, 4 infrastructure engineers, 2 data scientists, 3 hardware engineers, 2 broadcast specialists  
 - **BTHL**: 6 research scientists, 4 engineers, 2 patent attorneys
 
 All positions will offer competitive salaries + equity in rapidly growing ventures.
@@ -210,7 +236,8 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
 ### 🚀 Venture Growth
 - [ ] Close Series A funding rounds for all three ventures
 - [ ] Scale CasterClub to 10,000+ active stations
-- [ ] Launch MediaCast.ai enterprise tier with Fortune 500 clients
+- [ ] Launch MediaCast enterprise tier with Fortune 500 clients
+- [ ] Ship 500+ AI teleprompter units to broadcasters and podcasters
 - [ ] File 3+ patents through Beyond The Horizon Labs
 
 ### 🏗️ Infrastructure Evolution
@@ -221,6 +248,7 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
 
 ### 🔬 Innovation Projects
 - [ ] Finalize ICY 2.0 protocol specification and industry adoption
+- [ ] Mass produce AI teleprompter hardware with integrated MediaCast.studio
 - [ ] Launch BTHL Research Platform v2.0
 - [ ] Open-source core streaming technology components
 - [ ] Develop AI-powered infrastructure optimization systems
@@ -235,19 +263,19 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
 
 ## 💡 Philosophy
 
-> *"Innovation isn't just about using the latest tools—it's about solving tomorrow's problems today. As a serial entrepreneur who's self-funded every venture, I believe in proving concepts before seeking capital. Whether I'm optimizing a CI/CD pipeline or researching theoretical physics applications, I push boundaries and build systems that scale beyond current limitations."*
+> *"Innovation isn't just about using the latest tools—it's about solving tomorrow's problems today. As a serial entrepreneur who's self-funded every venture, I believe in proving concepts before seeking capital. Whether I'm optimizing a CI/CD pipeline, developing AI-powered hardware, or researching theoretical physics applications, I push boundaries and build systems that scale beyond current limitations."*
 
 ### 🎯 Entrepreneurial Journey
 - **2000-2006**: Founded and exited MediaCast1 (original streaming platform)
 - **2006-2024**: Honed expertise across Fortune 500 and startup environments  
-- **2025**: Simultaneously launching 3 ventures - proving that experience + innovation = unstoppable momentum
+- **2025**: Rebooting MediaCast1 as a complete hardware + software ecosystem with AI technology + launching CasterClub reboot & BTHL
 
 ### 📅 2025-2027 Roadmap
 - **Q1 2025**: Launch all three platforms, begin Series A fundraising
-- **Q2 2025**: Close Series A rounds, scale engineering teams
-- **Q3 2025**: ICY 2.0 protocol industry adoption, first enterprise clients
-- **Q4 2025**: 10,000+ stations on CasterClub, MediaCast.ai processing 1B+ requests/day
-- **2026**: International expansion, Series B preparation
+- **Q2 2025**: Close Series A rounds, scale engineering teams, ship first AI teleprompter units
+- **Q3 2025**: ICY 2.0 protocol industry adoption, first enterprise clients, 100+ teleprompters deployed
+- **Q4 2025**: 10,000+ stations on CasterClub, MediaCast processing 1B+ requests/day
+- **2026**: International expansion, Series B preparation, launch teleprompter v2.0
 - **2027**: IPO preparation or strategic exit opportunities
 
 ---
@@ -288,7 +316,8 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
 
 - 🚀 Launched 3 self-funded tech ventures simultaneously in 2025
 - 🥇 Led development of ICY 2.0 protocol specification for modern streaming metadata
-- 💡 Filed provisional patents for innovative monitoring and communication systems
+- 🎙️ Developed prototype AI teleprompter hardware with integrated broadcast software
+- 💡 Filed provisional patents for innovative monitoring, communication, and broadcast systems
 - 🎯 Bootstrapped ventures to MVP/profitability without external funding
 - 🔒 Achieved SOC 2 Type II compliance for multiple organizations
 - 🌟 Pioneered serverless architectures handling 1M+ requests/day
@@ -299,9 +328,9 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
 <!-- BLOG-POST-LIST:START -->
 - [From Engineer to Entrepreneur: Launching 3 Ventures in 2025](https://davidstj.com/blog/engineer-to-entrepreneur)
 - [ICY 2.0: The Future of Streaming Metadata](https://davidstj.com/blog/icy-2-protocol)
+- [AI Teleprompter: Revolutionizing Live Broadcasting](https://mediacast.studio/blog/ai-teleprompter)
 - [Self-Funding Deep Tech: Lessons from the Trenches](https://beyondthehorizonlabs.com/self-funding-deep-tech)
-- [AI-Powered Stream Discovery: The Next Evolution](https://mediacast.ai/blog/ai-stream-discovery)
-- [Building Resilient Infrastructure for Startups](https://davidstj.com/blog/startup-infrastructure)
+- [Building a Complete Broadcast Ecosystem](https://mediacast1.ai/blog/broadcast-ecosystem)
 <!-- BLOG-POST-LIST:END -->
 
 ---
@@ -310,5 +339,5 @@ All positions will offer competitive salaries + equity in rapidly growing ventur
   <b>⚡ Fun facts:</b> 
   <br>• I was one of the original AWS public beta testers before their official launch in 2006!
   <br>• Successfully bootstrapped and exited my first streaming company (MediaCast1) in 2006
-  <br>• Now rebooting my legacy platforms with AI and launching into quantum research - all self-funded!
+  <br>• Now building both software AND hardware (AI teleprompter) for the broadcast industry - all self-funded!
 </div>
