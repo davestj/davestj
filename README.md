@@ -26,7 +26,7 @@
 <div align="center">
   
 [![Email](https://img.shields.io/badge/Email-davestj%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:davestj@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-davidstj.com-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.davidstj.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-davestj.com-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.davestj.com)
 [![GitHub](https://img.shields.io/badge/GitHub-davestj-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/davestj)
 [![Bitbucket](https://img.shields.io/badge/Bitbucket-davestj-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)](http://bitbucket.org/davestj)
 
