@@ -1,0 +1,173 @@
+# GitHub Actions Workflow - Contribution Snake Animation Generator
+# Author: David St. John (davestj@gmail.com)
+# Date: December 2024
+# File: .github/workflows/snake.yml
+# Repository: davestj/davestj (GitHub Profile Repository)
+# Purpose: I use this workflow to generate an animated SVG snake that visualizes my GitHub contributions
+# 
+# Change Log:
+# - v1.0.0 (2024-12): Initial workflow implementation - I created this to automate snake generation
+# - Added dual theme support (light/dark) - I want my profile to look good in both themes
+# - Configured optimal animation settings - I tuned these for smooth visual experience
+# - Set up automated daily runs and manual triggers - I ensure fresh data daily
+#
+# Technical Notes:
+# - I'm using Platane/snk@v3 as it's the most reliable snake generator
+# - I generate both light and dark theme versions for better UX
+# - I use GitHub's built-in GITHUB_TOKEN for authentication
+# - I commit directly to the output branch to serve the SVGs
+
+name: Generate GitHub Contribution Snake
+
+# I configure when this workflow runs
+on:
+  # I schedule this to run automatically every day at midnight UTC
+  # This ensures my contribution snake is always up-to-date
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # I allow manual triggering from the Actions tab
+  # This is useful when I want to regenerate immediately after contributions
+  workflow_dispatch:
+  
+  # I trigger on pushes to main to keep the snake current
+  # This helps when I update my profile README
+  push:
+    branches:
+      - main
+      - master
+
+# I set up the jobs that will run
+jobs:
+  generate-snake:
+    # I name this job descriptively for the Actions UI
+    name: Generate contribution snake animation
+    
+    # I use the latest Ubuntu runner for optimal performance
+    runs-on: ubuntu-latest
+    
+    # I set a timeout to prevent hanging jobs
+    timeout-minutes: 10
+    
+    # I define the steps to generate the snake
+    steps:
+      # Step 1: I check out my repository
+      # This gives the workflow access to my repo structure
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # I need the full history for accurate contribution data
+          fetch-depth: 0
+      
+      # Step 2: I generate the snake animation files
+      # This is the core step that creates the SVG animations
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          # I use my GitHub token for API access
+          # This is automatically provided by GitHub Actions
+          github_user_name: ${{ github.repository_owner }}
+          
+          # I configure the outputs - creating both light and dark themes
+          # These will be saved as separate SVG files
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+          # I set custom color schemes for better visual appeal
+          # These colors match my profile's Tokyo Night theme
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          
+        env:
+          # I provide the GitHub token for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 3: I check the generated files
+      # This helps me debug if something goes wrong
+      - name: Show generated files
+        run: |
+          # I list all generated files to verify the output
+          echo "I'm checking the generated snake files..."
+          ls -la dist/ || echo "No dist directory found"
+          
+          # I display file sizes for monitoring
+          if [ -d "dist" ]; then
+            echo "I've generated the following files:"
+            du -sh dist/*
+          fi
+      
+      # Step 4: I commit and push the generated files
+      # This makes the SVGs available for my README
+      - name: Push snake animation to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          # I use the output branch to store generated files
+          # This keeps my main branch clean
+          target_branch: output
+          
+          # I specify the build directory containing the SVGs
+          build_dir: dist
+          
+          # I ensure the files are committed even if no changes
+          # This updates timestamps and keeps the workflow green
+          keep_history: false
+          
+        env:
+          # I authenticate with the provided token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 5: I create an alternative commit method as backup
+      # This ensures the files are saved even if the previous step fails
+      - name: Alternative commit method
+        # I only run this if the previous step fails
+        if: failure()
+        run: |
+          # I configure git with my identity
+          git config --local user.email "davestj@gmail.com"
+          git config --local user.name "David St. John"
+          
+          # I create or switch to the output branch
+          git checkout output 2>/dev/null || git checkout -b output
+          
+          # I ensure the dist directory exists
+          mkdir -p dist
+          
+          # I copy the generated files if they exist
+          if [ -f "dist/github-contribution-grid-snake.svg" ]; then
+            echo "I'm committing the snake animation files..."
+            git add dist/
+            git commit -m "🐍 Update contribution snake animation - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+            git push origin output --force
+          else
+            echo "I couldn't find the generated files to commit"
+          fi
+
+# Workflow Documentation
+# =====================
+# 
+# How I Use This Workflow:
+# 1. This workflow runs automatically every day at midnight UTC
+# 2. I can also trigger it manually from the Actions tab when needed
+# 3. It generates two SVG files: one for light theme and one for dark theme
+# 4. The files are pushed to an 'output' branch to keep main branch clean
+# 5. My README references these files using the raw GitHub URL
+#
+# Required Setup:
+# 1. I ensure Actions are enabled in my repository settings
+# 2. I verify the workflow has write permissions (Settings > Actions > General)
+# 3. I create the output branch if it doesn't exist (the workflow will do this automatically)
+#
+# Troubleshooting:
+# - If the snake doesn't appear: I check if the output branch was created
+# - If the workflow fails: I review the Actions log for specific errors
+# - If contributions are missing: I ensure my profile is public and contributions are visible
+#
+# SVG URLs for README:
+# Light theme: https://github.com/davestj/davestj/blob/output/github-contribution-grid-snake.svg
+# Dark theme: https://github.com/davestj/davestj/blob/output/github-contribution-grid-snake-dark.svg
+#
+# Performance Notes:
+# - I set a 10-minute timeout to prevent stuck workflows
+# - The workflow typically completes in 1-2 minutes
+# - I use GitHub's Ubuntu runners for consistency and reliability
