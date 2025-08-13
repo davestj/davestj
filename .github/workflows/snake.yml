@@ -625,118 +625,75 @@ EOF
           git tag -a "${{ steps.version.outputs.tag }}" -m "Automated release ${{ steps.version.outputs.tag }} - Snake animation generated $(date +'%Y-%m-%d %H:%M:%S UTC')"
           git push origin "${{ steps.version.outputs.tag }}"
           
-          # We prepare comprehensive release notes
-          cat > release-notes.md << EOF
-          # 🚀 GitHub Profile Visual Assets Release ${{ steps.version.outputs.version }}
+          # We prepare comprehensive release notes using a safer approach
+          RELEASE_VERSION="${{ steps.version.outputs.version }}"
+          REPO_NAME="${{ github.repository }}"
+          RUN_NUMBER="${{ github.run_number }}"
+          SERVER_URL="${{ github.server_url }}"
+          RUN_ID="${{ github.run_id }}"
+          COMMIT_SHA="${{ github.sha }}"
+          EVENT_NAME="${{ github.event_name }}"
           
-          **Release Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')  
-          **Workflow Run:** [${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})  
-          **Commit:** [\`$(echo ${{ github.sha }} | cut -c1-7)\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})
+          # We create the release notes file using echo commands to avoid heredoc issues
+          echo "# 🚀 GitHub Profile Visual Assets Release $RELEASE_VERSION" > release-notes.md
+          echo "" >> release-notes.md
+          echo "**Release Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')" >> release-notes.md
+          echo "**Workflow Run:** [$RUN_NUMBER]($SERVER_URL/$REPO_NAME/actions/runs/$RUN_ID)" >> release-notes.md
+          echo "**Commit:** [$(echo $COMMIT_SHA | cut -c1-7)]($SERVER_URL/$REPO_NAME/commit/$COMMIT_SHA)" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "## 🎨 Complete Visual Identity Package" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "This release includes a comprehensive set of automatically generated visual assets for your GitHub profile." >> release-notes.md
+          echo "" >> release-notes.md
+          echo "### 🐍 Contribution Snake Animation" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "- **snake-light-theme.svg** - Light theme snake animation" >> release-notes.md
+          echo "- **snake-dark-theme.svg** - Dark theme snake animation" >> release-notes.md
+          echo "- **snake-animation.gif** - Animated GIF version" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "### 🌟 Portal Icon Visualization" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "- **portal-light-theme.svg** - Light theme portal icon" >> release-notes.md
+          echo "- **portal-dark-theme.svg** - Dark theme portal icon" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "## 🔗 Direct Access URLs" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "| Asset Type | Theme | Direct URL |" >> release-notes.md
+          echo "|------------|-------|------------|" >> release-notes.md
+          echo "| Snake | Light | [View](https://raw.githubusercontent.com/$REPO_NAME/output/github-contribution-grid-snake.svg) |" >> release-notes.md
+          echo "| Snake | Dark | [View](https://raw.githubusercontent.com/$REPO_NAME/output/github-contribution-grid-snake-dark.svg) |" >> release-notes.md
+          echo "| Snake | GIF | [View](https://raw.githubusercontent.com/$REPO_NAME/output/github-contribution-grid-snake.gif) |" >> release-notes.md
+          echo "| Portal | Light | [View](https://raw.githubusercontent.com/$REPO_NAME/output/github-portal-icon.svg) |" >> release-notes.md
+          echo "| Portal | Dark | [View](https://raw.githubusercontent.com/$REPO_NAME/output/github-portal-icon-dark.svg) |" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "## 📝 Integration Examples" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "### Snake Animation" >> release-notes.md
+          echo '```markdown' >> release-notes.md
+          echo "![GitHub Snake](https://raw.githubusercontent.com/$REPO_NAME/output/github-contribution-grid-snake.svg)" >> release-notes.md
+          echo '```' >> release-notes.md
+          echo "" >> release-notes.md
+          echo "### Portal Icon" >> release-notes.md
+          echo '```markdown' >> release-notes.md
+          echo "<img align=\"right\" alt=\"GitHub Portal\" width=\"100\" src=\"https://raw.githubusercontent.com/$REPO_NAME/output/github-portal-icon.svg\">" >> release-notes.md
+          echo '```' >> release-notes.md
+          echo "" >> release-notes.md
+          echo "## 🔄 Automation Details" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "These assets are automatically regenerated daily at midnight UTC." >> release-notes.md
+          echo "" >> release-notes.md
+          echo "**Technical Details:**" >> release-notes.md
+          echo "- Generator: Platane/snk@v3 + Custom Node.js script" >> release-notes.md
+          echo "- Trigger: $EVENT_NAME" >> release-notes.md
+          echo "- Platform: GitHub Actions" >> release-notes.md
+          echo "- Generation Time: $(date +'%Y-%m-%d %H:%M:%S UTC')" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "---" >> release-notes.md
+          echo "" >> release-notes.md
+          echo "*This release was automatically generated by the GitHub Profile Visual Assets workflow system.*" >> release-notes.md
           
-          ## 🎨 Complete Visual Identity Package
-          
-          This release includes a comprehensive set of automatically generated visual assets for your GitHub profile, creating a cohesive and dynamic visual identity that updates with your coding activity.
-          
-          ### 🐍 Contribution Snake Animation
-          
-          The classic GitHub contribution snake that visualizes your commit history in an animated, gamified format:
-          
-          - **\`snake-light-theme.svg\`** - Light theme snake (perfect for light mode README files)
-          - **\`snake-dark-theme.svg\`** - Dark theme snake (optimized for dark mode interfaces)  
-          - **\`snake-animation.gif\`** - Animated GIF version (for platforms that don't support SVG animations)
-          
-          ### 🌟 Portal Icon Visualization
-          
-          A dynamic SVG portal icon that represents your coding profile through data-driven visual elements:
-          
-          - **\`portal-light-theme.svg\`** - Light theme portal icon with profile data visualization
-          - **\`portal-dark-theme.svg\`** - Dark theme portal icon optimized for dark backgrounds
-          
-          The portal icon visualizes your GitHub profile data including programming languages, repository count, years active, and follower metrics through geometric patterns, color coding, and proportional elements.
-          
-          ### 📋 Integration Documentation
-          
-          - **\`release-info.txt\`** - Complete integration guide with URLs and embedding examples
-          
-          ## 🔗 Direct Access URLs
-          
-          Access the latest versions directly from the output branch:
-          
-          | Asset Type | Theme | Format | Direct URL |
-          |------------|-------|---------|------------|
-          | Snake | Light | SVG | [View](https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake.svg) |
-          | Snake | Dark  | SVG | [View](https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake-dark.svg) |
-          | Snake | Any | GIF | [View](https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake.gif) |
-          | Portal | Light | SVG | [View](https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon.svg) |
-          | Portal | Dark | SVG | [View](https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon-dark.svg) |
-          
-          ## 📝 README Integration Examples
-          
-          ### Basic Snake Animation
-          \`\`\`markdown
-          <!-- Light theme snake -->
-          ![GitHub Snake Light](https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake.svg)
-          
-          <!-- Dark theme snake (with media query) -->
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake-dark.svg">
-            <img alt="GitHub Snake" src="https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake.svg">
-          </picture>
-          \`\`\`
-          
-          ### Portal Icon Integration
-          \`\`\`markdown
-          <!-- Portal icon as profile badge -->
-          <img align="right" alt="GitHub Portal" width="100" src="https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon.svg">
-          
-          <!-- Responsive portal icon -->
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon-dark.svg">
-            <img alt="GitHub Portal" width="120" src="https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon.svg">
-          </picture>
-          \`\`\`
-          
-          ### Complete Profile Header
-          \`\`\`markdown
-          <div align="center">
-            <img width="150" src="https://raw.githubusercontent.com/${{ github.repository }}/output/github-portal-icon.svg" alt="GitHub Portal">
-            <h1>Your Name</h1>
-            <p>Your tagline or description</p>
-            <img src="https://raw.githubusercontent.com/${{ github.repository }}/output/github-contribution-grid-snake.svg" alt="GitHub Snake">
-          </div>
-          \`\`\`
-          
-          ## 🔄 Automation Details
-          
-          These visual assets are automatically regenerated daily at midnight UTC, ensuring they always reflect your most current GitHub activity. The portal icon dynamically adjusts its visualization based on your programming language usage, repository count, and profile metrics.
-          
-          **Next Update:** Automatic regeneration occurs daily at 00:00 UTC, or you can trigger manual updates from the Actions tab.
-          
-          ## 🛠️ Technical Specifications
-          
-          **Snake Animation:**
-          - Generator: Platane/snk@v3
-          - Format: SVG with CSS animations, GIF fallback
-          - Data source: GitHub contribution graph
-          - Themes: Light and dark mode optimized
-          
-          **Portal Icon:**
-          - Generator: Custom Node.js script using GitHub API
-          - Format: Scalable Vector Graphics (SVG)
-          - Data sources: Profile metrics, repository languages, activity patterns
-          - Visualization: Geometric patterns with data-driven proportions
-          - Themes: Optimized color schemes for light and dark interfaces
-          
-          **Infrastructure:**
-          - Platform: GitHub Actions with ubuntu-latest runners
-          - Trigger: ${{ github.event_name }}
-          - Generation Time: $(date +'%Y-%m-%d %H:%M:%S UTC')
-          - Storage: Dual deployment to output branch and release artifacts
-          
-          ---
-          
-          *This complete visual asset package was automatically generated by the GitHub Profile Visual Assets workflow system.*
-          EOF
+          echo "We have created comprehensive release notes:"
+          wc -l release-notes.md
           
           # We create the GitHub release using the GitHub CLI
           echo "We are creating the GitHub release..."
