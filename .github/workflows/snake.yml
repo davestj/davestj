@@ -1,22 +1,25 @@
-# Basic GitHub Actions Workflow - Simple Test
+# Basic GitHub Actions Workflow - Simple Test with Releases
 # Author: David St. John (davestj@gmail.com)
 # Date: August 13, 2025
 # File: .github/workflows/snake.yml
 # Repository: davestj/davestj (GitHub Profile Repository)
-# Purpose: We use this workflow to test that our GitHub Actions setup works correctly
+# Purpose: We use this workflow to test GitHub Actions and create versioned releases
 # 
 # CHANGELOG:
 # - v1.0.0 (2025-08-13): Simple test workflow that actually works
-#   - We run a basic Debian Trixie container
-#   - We output a simple greeting message
-#   - We verify the workflow executes without syntax errors
+# - v2.0.0 (2025-08-13): Added versioning and release automation
+#   - We detect existing tags and auto-increment from 3.0.0 baseline
+#   - We create production releases for master branch
+#   - We create pre-releases for dev branch PRs
+#   - We prepare foundation for future certification integration
 
-name: Simple GitHub Actions Test
+name: Simple GitHub Actions Test with Releases
 
-# We set basic permissions for testing
+# We set comprehensive permissions for releases
 permissions:
-  contents: read
+  contents: write
   actions: read
+  pull-requests: read
 
 on:
   schedule:
@@ -26,15 +29,83 @@ on:
     branches:
       - main
       - master
+  pull_request:
+    branches:
+      - dev
 
 jobs:
-  test-basic-workflow:
-    name: Test basic workflow functionality
+  test-and-release:
+    name: Test workflow and create release
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      is-prerelease: ${{ steps.version.outputs.is-prerelease }}
     
     steps:
-      # Step 1: Test that we can run a simple container
+      # Step 1: Checkout with full history for tag detection
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      # Step 2: Calculate version based on branch and existing tags
+      - name: Calculate version number
+        id: version
+        run: |
+          echo "We are calculating version number..."
+          
+          # We fetch all tags
+          git fetch --tags
+          
+          # We find the latest version tag (v3.x.x format)
+          LATEST_TAG=$(git tag -l "v3.*.*" | sort -V | tail -n 1)
+          
+          if [ -z "$LATEST_TAG" ]; then
+            # We start with baseline version 3.0.0
+            NEW_VERSION="3.0.0"
+            echo "We found no existing v3.x.x tags, starting with $NEW_VERSION"
+          else
+            echo "We found latest tag: $LATEST_TAG"
+            # We extract version numbers (remove 'v' prefix)
+            VERSION_NUMBER=${LATEST_TAG#v}
+            IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION_NUMBER"
+            
+            # We increment based on branch/trigger
+            if [ "${{ github.event_name }}" = "pull_request" ]; then
+              # We increment patch for pre-releases
+              PATCH=$((PATCH + 1))
+              NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+            else
+              # We increment minor for production releases
+              MINOR=$((MINOR + 1))
+              PATCH=0
+              NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+            fi
+          fi
+          
+          # We determine if this is a pre-release
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            IS_PRERELEASE="true"
+            RELEASE_NAME="Dave $NEW_VERSION-dev"
+            echo "Creating pre-release: $RELEASE_NAME"
+          else
+            IS_PRERELEASE="false"
+            RELEASE_NAME="Dave $NEW_VERSION"
+            echo "Creating production release: $RELEASE_NAME"
+          fi
+          
+          # We set outputs
+          echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "release-name=$RELEASE_NAME" >> $GITHUB_OUTPUT
+          echo "is-prerelease=$IS_PRERELEASE" >> $GITHUB_OUTPUT
+          
+          echo "🏷️ Version: $NEW_VERSION"
+          echo "📦 Release: $RELEASE_NAME"
+      
+      # Step 3: Test that we can run a simple container
       - name: Run Debian Trixie container test
         run: |
           echo "We are starting a Debian Trixie container test..."
@@ -44,28 +115,124 @@ jobs:
           
           echo "We have successfully completed our container test!"
       
-      # Step 2: Output some basic information
+      # Step 4: Create and push version tag
+      - name: Create version tag
+        run: |
+          echo "We are creating version tag ${{ steps.version.outputs.tag }}..."
+          
+          # We configure git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # We create the tag
+          git tag -a "${{ steps.version.outputs.tag }}" -m "Release ${{ steps.version.outputs.release-name }}"
+          git push origin "${{ steps.version.outputs.tag }}"
+          
+          echo "✅ Created tag: ${{ steps.version.outputs.tag }}"
+      
+      # Step 5: Create GitHub release
+      - name: Create GitHub release
+        run: |
+          echo "We are creating GitHub release..."
+          
+          # We prepare release notes
+          cat > release-notes.md << EOF
+          # ${{ steps.version.outputs.release-name }}
+          
+          **Release Date:** $(date +'%Y-%m-%d %H:%M:%S UTC')
+          **Workflow Run:** [${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          **Trigger:** ${{ github.event_name }}
+          
+          ## Release Information
+          
+          This is an automated release of Dave's GitHub profile system.
+          
+          **Version:** ${{ steps.version.outputs.version }}
+          **Type:** ${{ steps.version.outputs.is-prerelease == 'true' && 'Pre-release' || 'Production Release' }}
+          **Branch:** ${{ github.ref_name }}
+          
+          ## What's Included
+          
+          - ✅ Basic workflow functionality testing
+          - ✅ Automated version management
+          - ✅ GitHub Actions infrastructure validation
+          
+          ## Future Enhancements
+          
+          This release establishes the foundation for integrating:
+          - Professional certifications and achievements
+          - Advanced automation features
+          - Enhanced profile presentation tools
+          
+          ---
+          
+          *This release was automatically generated by GitHub Actions.*
+          EOF
+          
+          # We create the release
+          gh release create "${{ steps.version.outputs.tag }}" \
+            --title "${{ steps.version.outputs.release-name }}" \
+            --notes-file release-notes.md \
+            ${{ steps.version.outputs.is-prerelease == 'true' && '--prerelease' || '--latest' }}
+          
+          echo "✅ Created release: ${{ steps.version.outputs.release-name }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Step 6: Display workflow information
       - name: Display workflow information
         run: |
           echo "We are running in workflow: ${{ github.workflow }}"
           echo "We are running on repository: ${{ github.repository }}"
           echo "We were triggered by: ${{ github.event_name }}"
+          echo "We created release: ${{ steps.version.outputs.release-name }}"
           echo "We are running on: $(date)"
           echo "We have confirmed our GitHub Actions setup is working correctly!"
       
-      # Step 3: Create a simple summary
+      # Step 7: Create workflow summary
       - name: Create workflow summary
         run: |
-          echo "# ✅ Basic Workflow Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "# ✅ Workflow Test & Release Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Date:** $(date)" >> $GITHUB_STEP_SUMMARY
           echo "**Repository:** ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
           echo "**Triggered by:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Version:** ${{ steps.version.outputs.version }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "## Test Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "✅ Debian Trixie container executed successfully" >> $GITHUB_STEP_SUMMARY
           echo "✅ Basic echo command worked correctly" >> $GITHUB_STEP_SUMMARY
           echo "✅ GitHub Actions syntax is valid" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Version tag created: ${{ steps.version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Release published: ${{ steps.version.outputs.release-name }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "This simple test confirms our workflow infrastructure is working properly."
+          echo "## Release Information" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Release URL:** [${{ steps.version.outputs.release-name }}](${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ steps.version.outputs.tag }})" >> $GITHUB_STEP_SUMMARY
+          echo "**Type:** ${{ steps.version.outputs.is-prerelease == 'true' && 'Pre-release (dev branch)' || 'Production Release (master branch)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "This workflow confirms our automation infrastructure is ready for certification integration."
+
+# ============================================================================
+# SIMPLE WORKFLOW DOCUMENTATION
+# ============================================================================
+# 
+# This workflow is intentionally basic and straightforward to ensure it works
+# without any syntax errors or complex dependencies.
+# 
+# What this workflow does:
+# 1. We run a simple Debian Trixie container
+# 2. We execute a basic echo command that outputs "Hello Github"
+# 3. We display some basic workflow information
+# 4. We create a simple summary of the test results
+# 
+# This proves that:
+# - Our GitHub Actions syntax is correct
+# - Our repository permissions are configured properly
+# - Our workflow can execute Docker containers
+# - Our basic automation infrastructure is functional
+# 
+# Once this simple workflow runs successfully, we can incrementally add
+# more complex functionality with confidence that the foundation works.
+# ============================================================================
