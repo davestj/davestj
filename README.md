@@ -124,12 +124,6 @@ print(f"Profile Version: 3.0.0 | Maintained since: {me.profile_created}")
 
 ## 📊 My GitHub Analytics
 
-<!-- GitHub Stats Cards -->
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=davestj&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davestj&layout=compact&langs_count=10&theme=tokyonight&hide_border=true"/>
-</div>
-
 <!-- GitHub Streak Stats -->
 <div align="center">
   <img src="https://streak-stats.demolab.com/?user=davestj&theme=tokyonight&hide_border=true" alt="My GitHub Streak Stats"/>
@@ -260,6 +254,8 @@ timeline
 ![CrowdStrike](https://img.shields.io/badge/CrowdStrike-E01F3D?style=for-the-badge&logo=crowdstrike&logoColor=white)
 
 ### Programming & Scripting
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -270,6 +266,7 @@ timeline
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Aurora](https://img.shields.io/badge/Aurora-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)
 ![MSSQL](https://img.shields.io/badge/MSSQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 
@@ -277,36 +274,14 @@ timeline
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![ELK](https://img.shields.io/badge/Elastic_Stack-005571?style=for-the-badge&logo=elastic-stack&logoColor=white)
-![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white)
-![New Relic](https://img.shields.io/badge/New_Relic-008C99?style=for-the-badge&logo=new-relic&logoColor=white)
 
 ---
 
 ## 📈 My Contribution Metrics
 
-<!-- Updated August 2025: Removed WakaTime dependency for better reliability -->
-<!-- GitHub Contribution Graph - I'm using this as the primary activity indicator -->
-<div align="center">
-  
-  <!-- Detailed Language Statistics -->
-  <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davestj&layout=compact&langs_count=10&theme=tokyonight&hide_border=true&card_width=800"/>
-  
-</div>
-
 <!-- Contribution Activity Breakdown -->
 <div align="center">
-  
-  <!-- I'm showing my commit activity patterns throughout 2025 -->
-  ![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=davestj&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Activity%20in%202025)
-  
-</div>
-
-<!-- GitHub Metrics Plugin - Comprehensive activity metrics -->
-<div align="center">
-  
-  <!-- I'm using the metrics plugin for detailed insights without external dependencies -->
-  <img src="https://metrics.lecoq.io/davestj?template=classic&base.header=0&base.activity=1&base.community=1&base.repositories=1&base.metadata=0&languages=1&achievements=1&languages.limit=10&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&achievements.threshold=C&achievements.secrets=true&achievements.display=detailed&achievements.limit=0&config.timezone=America%2FLos_Angeles&config.display=large" alt="My Detailed GitHub Metrics"/>
-  
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=davestj&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Activity" alt="Contribution Graph"/>
 </div>
 
 <!-- Profile Views Counter - Tracking since 2023 -->
@@ -351,33 +326,22 @@ timeline
   
 </div>
 
-<!-- Profile repository showcase -->
-<div align="center">
-  <a href="https://github.com/davestj/davestj">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=davestj&repo=davestj&theme=tokyonight&hide_border=true" />
-  </a>
-</div>
-
 ---
 
 ## 🏅 My Certifications & Achievements
-
-<div align="center">
 
 ### Professional Certifications
 - 🏆 **PHP Certification** - UpWork/oDesk (2008)
 - 🏆 **RHEL Certification** - Red Hat (2008)
 - 🌟 **AWS Beta Tester** - Original participant (2003-2006)
 
-### Key Achievements (Through August 2025)
+### Key Achievements
 - 📌 Led cloud migrations for Fortune 500 companies
 - 📌 Architected solutions handling millions of requests daily
 - 📌 Implemented zero-downtime deployment strategies
 - 📌 Reduced infrastructure costs by 40% through optimization
 - 📌 Mentored 50+ engineers in DevSecOps practices
 - 📌 Maintained this GitHub profile showcase for 2+ years
-
-</div>
 
 ---
 
