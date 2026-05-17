@@ -159,7 +159,12 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 
 ## 📊 My GitHub Analytics
 
-<!-- GitHub Streak Stats -->
+<!-- Self-hosted stats card — mcaster1.com/github/api/stats.php -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/stats.php?user=davestj&theme=tokyonight" alt="GitHub stats — stars, forks, repos, followers, member-since"/>
+</div>
+
+<!-- GitHub Streak Stats — demolab.com (working) -->
 <div align="center">
   <img src="https://streak-stats.demolab.com/?user=davestj&theme=tokyonight&hide_border=true" alt="My GitHub Streak Stats"/>
 </div>
@@ -358,6 +363,11 @@ timeline
 
 ## 📈 My Contribution Metrics
 
+<!-- Self-hosted top-languages card — mcaster1.com/github/api/langs.php -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/langs.php?user=davestj&theme=tokyonight&count=12" alt="Most used languages"/>
+</div>
+
 <!-- Contribution Activity Breakdown -->
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=davestj&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Activity" alt="Contribution Graph"/>
@@ -370,12 +380,10 @@ timeline
 
 <!-- Activity Summary Badges -->
 <div align="center">
-  
-  <!-- I'm creating custom activity badges that don't depend on external services -->
-  ![Commits This Year](https://img.shields.io/badge/Commits%20in%202026-74%2B-blue?style=for-the-badge&logo=git&logoColor=white)
-  ![Pull Requests](https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white)
-  ![Code Reviews](https://img.shields.io/badge/Code%20Reviews-500%2B-purple?style=for-the-badge&logo=github&logoColor=white)
-  
+  <!-- Commits this year — live from mcaster1.com/github/api/commits-year.php (replaces broken shields.io dynamic JSON) -->
+  <img src="https://mcaster1.com/github/api/commits-year.php?user=davestj&year=2026&theme=tokyonight" alt="Commits in 2026"/>
+  <img src="https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white" alt="Pull Requests"/>
+  <img src="https://img.shields.io/badge/Code%20Reviews-500%2B-purple?style=for-the-badge&logo=github&logoColor=white" alt="Code Reviews"/>
 </div>
 
 ---
