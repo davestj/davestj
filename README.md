@@ -12,10 +12,10 @@
  * - v1.2.0 (2024-05): Integrated skill badges and technology stack - I expanded my capability showcase
  * - v1.3.0 (2024-08): Added AWS beta tester highlight - I emphasized my unique cloud computing history
  * - v1.4.0 (2024-11): Implemented career timeline with Mermaid - I visualized my professional journey
- * - v2.0.0 (2025-01): Major refactor with trophy system - I added achievement displays
- * - v2.1.0 (2025-04): Enhanced responsive design within GitHub markdown - I improved mobile experience
- * - v2.2.0 (2025-06): Added build status badges - I demonstrated CI/CD best practices
- * - v3.0.0 (2025-08): Complete metrics overhaul - I removed WakaTime, fixed conflicts, enhanced reliability
+ * - v2.0.0 (2026-01): Major refactor with trophy system - I added achievement displays
+ * - v2.1.0 (2026-02): Enhanced responsive design within GitHub markdown - I improved mobile experience
+ * - v2.2.0 (2026-03): Added build status badges - I demonstrated CI/CD best practices
+ * - v3.0.0 (2026-04): Complete metrics overhaul - I removed WakaTime, fixed conflicts, enhanced reliability
  *   - Eliminated external service dependencies for better reliability
  *   - Fixed GitHub Actions workflow conflicts with preserve-clean-restore strategy
  *   - Implemented multiple fallback strategies for all external services
@@ -38,10 +38,10 @@
  * - 2024-05-10: "feat: Implement comprehensive tech stack badges"
  * - 2024-08-22: "feat: Highlight AWS beta tester experience"
  * - 2024-11-30: "feat: Add interactive career timeline"
- * - 2025-01-15: "refactor: Major profile enhancement with trophies"
- * - 2025-04-08: "fix: Improve responsive design for mobile"
- * - 2025-06-20: "feat: Add CI/CD build status monitoring"
- * - 2025-08-11: "fix: Resolve all external dependencies and workflow conflicts"
+ * - 2026-01-15: "refactor: Major profile enhancement with trophies"
+ * - 2026-02-08: "fix: Improve responsive design for mobile"
+ * - 2026-03-20: "feat: Add CI/CD build status monitoring"
+ * - 2026-04-11: "fix: Resolve all external dependencies and workflow conflicts"
  * - 2026-05-16: "refresh: Mcaster1 ecosystem narrative + 2026 tech stack backfill"
 -->
 
@@ -128,7 +128,7 @@ class DevSecOpsArchitect:
         return {
             "2023": "Initial profile creation with basic information",
             "2024": "Added interactive visualizations and metrics",
-            "2025": "Reliability overhaul — removed broken external services",
+            "2026-Q1": "Reliability overhaul — removed broken external services",
             "2026": "Mcaster1 ecosystem refresh, Celenite Stack, AI-engineering narrative"
         }
 
@@ -632,15 +632,15 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
 </div>
 
 <!-- 
-  Technical Notes and Troubleshooting (Updated August 11, 2025):
+  Technical Notes and Troubleshooting (Updated April 11, 2026):
   ==============================================================
   
   Version History Summary:
   - v1.x (2023-2024): Initial development and feature additions
-  - v2.x (2025 Q1-Q2): Major enhancements and responsive design
-  - v3.0.0 (2025-08-11): Complete reliability overhaul
+  - v2.x (2026 Q1): Major enhancements and responsive design
+  - v3.0.0 (2026-04-11): Complete reliability overhaul
   
-  Today's Major Fixes (August 11, 2025):
+  Today's Major Fixes (April 11, 2026):
   - Resolved GitHub Actions workflow conflicts with preserve-clean-restore strategy
   - Eliminated WakaTime dependency that was causing display errors
   - Implemented fallback strategies for all external services
@@ -657,7 +657,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
   - Metrics.lecoq.io: Comprehensive analytics
   - Shields.io: Dynamic badge generation
   
-  Data Privacy Improvements (August 2025):
+  Data Privacy Improvements (April 2026):
   - Removed all third-party tracking services
   - Uses only public GitHub API data
   - No external plugins or authentication required
@@ -669,7 +669,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
   - Monthly: Update project showcases
   - Quarterly: Major version reviews
   
-  Known Issues as of August 11, 2025:
+  Known Issues as of April 11, 2026:
   - Trophy service may experience intermittent availability
   - Custom badges provide reliable fallback
   - All critical metrics have redundant sources
