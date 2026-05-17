@@ -402,28 +402,56 @@ Qt6 cross-platform builds for macOS (universal ARM64/x86), Linux (Debian/Ubuntu/
 
 ## 🤖 How I Work With AI
 
-I'm not an AI hobbyist. I'm a senior engineer who has integrated LLM agents into every layer of my development lifecycle — from architecture decisions and code generation, through CI/CD and deployment, to security audits, content production, and operations. The Mcaster1 ecosystem above wasn't built *by* AI — it was built *with* AI, the way a senior carpenter uses a power tool: I drive, the agent multiplies.
+I'm not an AI hobbyist. I'm a senior engineer who has integrated LLM agents into every layer of my development lifecycle — architecture decisions, code generation, CI/CD, deployment, security audits, content production, live operations. The Mcaster1 ecosystem above wasn't built *by* AI. It was built *with* AI, the way a senior carpenter uses a power tool: I drive, the agent multiplies.
 
-### The Tools I Actually Use
-- **Claude (Anthropic) + Claude Code** — my daily driver. Used end-to-end for code generation, refactors, multi-repo operations, history rewrites, infrastructure provisioning, and live ops. I run agentic workflows that span days of work in a single session.
-- **ChatGPT + OpenAI API** — research, brainstorming, second-opinion validation, occasional code review on Claude's output.
-- **Cursor IDE** — for inline, in-editor pair-programming when the work is dense and the file is in front of me.
-- **GitHub Copilot** — autocomplete-grade assist for boilerplate, test scaffolds, type definitions.
-- **Ollama** — local models for offline / private contexts (no data leaves the box).
-- **Model Context Protocol (MCP)** — for agentic integrations with external systems where the model needs structured tool access.
-- **Anthropic API / OpenAI API** — embedded into Mcaster1 products themselves (the AI persona system in `Mcaster1Studio`, "Artist Intel" in `Mcaster1DAWCast`).
+Every project in the Latest Projects section was shipped in collaboration with AI agents. **That's the receipt.**
 
-### What I'm Actually Good At
-- **Multi-turn agentic orchestration**: I run agents on real production work — refactoring, history rewrites, force-pushes, security scrubs across 18+ repos in one session — not toy demos. I know when to delegate, when to intervene, and when to escalate.
-- **Tight, directive prompting**: I don't over-specify. I trust the model to fill gaps and course-correct it fast when off-track. Three-word imperatives beat five-paragraph briefs when the context is loaded.
-- **Recognizing model failure modes**: When an agent makes a unilateral architectural decision, leaks a literal secret into a blog post, or misinterprets scope, I catch it and recover the system state — including reverting destructive operations like force-pushes when needed.
-- **AI-in-the-product, not just AI-in-the-workflow**: The Mcaster1 ecosystem has AI features built in — persona generation, content suggestions, audio analysis — using the same API primitives I use for development.
-- **Embedded prompt discipline**: Every product's prompts are versioned, audited, and treated as source code. No "magic strings."
+### The Tools I Actually Use Day-to-Day
+
+- **[Claude](https://claude.ai) + [Claude Code](https://claude.com/claude-code)** *(Anthropic)* — daily driver. End-to-end for code generation, multi-repo refactors, history rewrites, infrastructure provisioning, live ops. Sessions routinely span hours of agentic work with dozens of force-push-grade decisions.
+- **[ChatGPT](https://chat.openai.com) + OpenAI API** — research, brainstorming, second-opinion validation, occasional cross-review on Claude's output. Different models catch different mistakes.
+- **[Cursor](https://cursor.com) IDE** — in-editor pair programming when the work is dense and the file's in front of me.
+- **[GitHub Copilot](https://github.com/features/copilot)** — autocomplete-grade assist for boilerplate, test scaffolds, type definitions, repetitive structures.
+- **[Ollama](https://ollama.com)** — local model serving for offline / private contexts where nothing leaves the box.
+- **[Model Context Protocol (MCP)](https://modelcontextprotocol.io)** — structured agentic tool integration for cases where the model needs typed access to external systems (databases, APIs, internal services).
+- **Anthropic API / OpenAI API** — embedded directly inside Mcaster1 products: the AI persona system in `Mcaster1Studio`, "Artist Intel" in `Mcaster1DAWCast`, anomaly baselines in `Mcaster1BackDraft`.
+
+### How I "Train" My Models (Without an ML Lab)
+
+I don't run RLHF jobs. I don't fine-tune weights. I don't operate H100 clusters. But I shape model behavior in production every day, through the techniques that actually move the needle for working engineers:
+
+- **Persistent memory systems** — Every session writes durable behavioral memory to disk. A correction in one session ("never publish real secrets in public artifacts") becomes a hard rule in the next. A validated pattern ("the `.example` + gitignore split was the right call") becomes the default. Over weeks, the agent's behavior on my projects converges with my preferences — not because the weights changed, but because the context window does.
+- **Project-level instruction files** — Every repo has its own `CLAUDE.md` the agent reads on session start: server inventory, SSH alias maps, hard architectural rules (`"never reverse-proxy Celenite stack apps"`), gotchas from prior incidents. In-context learning with a paper trail.
+- **Tight feedback loops on bad calls** — When an agent makes a unilateral infrastructure decision or oversteps scope, I push back hard, fix the system state, and write the correction to memory the same session. Next time, that failure mode is structurally blocked, not just less likely.
+- **Versioned prompts as source code** — Every product's runtime prompts live in version control. Diffed, reviewed, audited. I treat prompt drift the same way I treat config drift: a bug.
+- **Multi-model cross-validation** — High-stakes outputs (architectural decisions, security-sensitive code) get a second pass from a different model family. Different training mixes catch different mistakes.
+
+It's not gradient descent. It's behavioral conditioning through systematic context engineering — and the operational outcome is the same: an agent that converges on doing the right thing on my problems.
+
+### What I'm Honestly Good At
+
+- **Multi-turn agentic orchestration on production systems.** I run agents on real work — 18-repo history rewrites with force-pushes, security scrubs spanning thousands of commits, cross-fleet Ansible deploys, multi-step Kubernetes provisioning. Not toy demos. Sessions are hours long, decisions are mostly atomic, and recovery from a bad call is built into the workflow.
+- **Tight, directive prompting.** I don't over-specify. Three-word imperatives beat five-paragraph briefs once the context is loaded. The model fills gaps; I course-correct fast when it drifts. Most users do the opposite — long briefs, slow corrections, ambient frustration.
+- **Recognizing model failure modes in real time.** Unilateral infra decisions, scope creep, hallucinated APIs, a literal secret accidentally pasted into a generated blog post — I catch these *while they happen*, recover the system state (including reverting destructive force-pushes), and write the correction to memory the same session so the pattern doesn't repeat.
+- **AI-in-the-product, not just AI-in-the-workflow.** My products *use* AI. Persona generation, content suggestion, audio analysis, anomaly baselines — same API primitives I use for development, embedded in customer-facing features. I know both sides of the wire.
+- **Prompt engineering as engineering discipline.** No "vibe prompts." Every template is versioned. Every output is testable. Every regression is reviewable. Prompts are code; treat them like it.
+- **Knowing when to ignore the agent.** Sometimes the model wants to add nginx in front of a single-binary daemon. Sometimes it wants to write a framework where two `if` statements would do. I push back. The Mcaster1 ecosystem stays simple because *I* enforce the simplicity, not because the agent suggested it.
+
+### Production Receipts (Shipped This Year)
+
+- **[Mcaster1StackSmith](https://github.com/davestj/Mcaster1StackSmith)** — A full K8s + KVM + container control plane, scaffolded across multiple agent sessions, hundreds of files, production-grade, running my own fleet. Not vibe-coded.
+- **[Celenite Stack](https://mcaster1.com/celenitestack/)** — Architectural pattern developed iteratively with AI as architecture reviewer, then named, documented, and applied across 8+ shipped products. The "C" pun is mine; the architecture is mine; the iteration loop ran through AI.
+- **18-repo history rewrite + secret scrub** — Completed in a single afternoon with multi-turn agent orchestration. Force-pushed live. Verified clean post-rewrite. Recovery operations included.
+- **[Mcaster1BackDraft](https://github.com/davestj/Mcaster1BackDraft) 15-script refactor** — Inline credentials → centralized config defines across 15 task scripts: agent-driven, `php -l` validated, one clean commit, zero regressions.
+- **Mcaster1 .bashrc engineering series** — 7 long-form technical articles on shell environment design, drafted and revised in-collaboration, then published live.
 
 ### What I Won't Pretend
-I'm not a research scientist. I don't train models. I don't publish ML papers. What I *do* is build production systems with AI as a primary engineering multiplier, and I've shipped real software this way — not vibe-coded screenshots, not toy chatbots. The repositories above are receipts.
 
-If you're hiring for someone who can both architect a system AND operate it AND ship with AI agents in the loop end-to-end, that's the job description I've been writing for myself for the last three years.
+- I'm not a research scientist. I don't train models. I don't publish ML papers.
+- I don't fine-tune. I don't run distillation. I don't operate fleets of accelerators.
+- I'm not a "prompt engineer" in the LinkedIn-job-title sense. I'm a senior infrastructure engineer who happens to be unusually fluent at directing language models.
+
+What I *do* is build production systems with AI as a primary engineering multiplier — and ship real software, in plain sight, with the repos above as receipts. If you're hiring someone who can architect a system, operate it, and ship with AI agents end-to-end in the loop, that's the job description I've been writing for myself for the last three years.
 
 ---
 
