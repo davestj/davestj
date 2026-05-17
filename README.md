@@ -47,7 +47,11 @@
 
 <!-- Profile Header with Dynamic Typing Effect -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+David+St.+John+%F0%9F%91%8B;DevSecOps+Lead+%26+Architect;20%2B+Years+of+Experience;AWS+Original+Beta+Tester+(2003)" alt="Typing SVG" />
+  <a href="https://mcaster1.com/github/typing-3d/" title="Click for the live WebGL / Three.js version">
+    <img src="https://mcaster1.com/github/api/typing.php?theme=mcaster1&width=900&height=280" alt="Animated broadcast-themed banner — David St. John, DevSecOps Lead & Cloud Architect. Click for the WebGL version."/>
+  </a>
+  <br/>
+  <sub><a href="https://mcaster1.com/github/typing-3d/">🎬 View the full WebGL 3D version →</a></sub>
 </div>
 
 <!-- Professional Banner -->
