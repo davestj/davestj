@@ -406,6 +406,21 @@ Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to
   <img src="https://mcaster1.com/github/api/topics.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Repo topic tag cloud — domain breakdown"/>
 </div>
 
+<!-- 🆕 DORA Mean Time To Recovery — failed run → next green -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/mttr.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="DORA Mean Time To Recovery — median time from failure to next green"/>
+</div>
+
+<!-- 🆕 Bus Factor / Solo Founder index — collaboration distribution -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/bus-factor.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Bus factor and collaboration index — solo vs multi-contributor repos"/>
+</div>
+
+<!-- 🆕 DevSecOps posture — license, branch protection, alert coverage composite -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/security.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="DevSecOps posture composite score with license / protection / alert coverage"/>
+</div>
+
 <!-- PR + Issue activity card (self-hosted, replaces shields.io dynamic JSON) -->
 <div align="center">
   <img src="https://mcaster1.com/github/api/prs.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="PRs and Issues — opened, merged, reviewed"/>
