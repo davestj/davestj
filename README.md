@@ -176,7 +176,7 @@ print(f"Profile Version: 3.0.0 | Maintained since: {me.profile_created}")
   <!-- I'm creating custom achievement badges that highlight my unique qualifications -->
   ![20+ Years Experience](https://img.shields.io/badge/Experience-20%2B%20Years-gold?style=for-the-badge&logo=amazon-aws&logoColor=white)
   ![AWS Beta Tester](https://img.shields.io/badge/AWS%20Beta%20Tester-Since%202003-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-  ![Profile Maintained](https://img.shields.io/badge/Profile%20Active-Since%202023-success?style=for-the-badge&logo=github&logoColor=white)
+  ![GitHub Member](https://img.shields.io/badge/GitHub%20Member-Since%202010-181717?style=for-the-badge&logo=github&logoColor=white)
   ![Repositories](https://img.shields.io/badge/Public%20Repos-50%2B-green?style=for-the-badge&logo=github&logoColor=white)
   ![Contributions](https://img.shields.io/badge/Contributions-10K%2B-blue?style=for-the-badge&logo=github&logoColor=white)
   ![Languages](https://img.shields.io/badge/Languages-15%2B-purple?style=for-the-badge&logo=code&logoColor=white)
@@ -232,14 +232,32 @@ timeline
 ### Cloud & Infrastructure
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![OVHcloud](https://img.shields.io/badge/OVHcloud-123F6D?style=for-the-badge&logo=ovh&logoColor=00A4E6)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Packer](https://img.shields.io/badge/Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white)
+![HashiCorp Vault](https://img.shields.io/badge/HashiCorp_Vault-FFEC6E?style=for-the-badge&logo=vault&logoColor=black)
+![cloud-init](https://img.shields.io/badge/cloud--init-262261?style=for-the-badge&logoColor=white)
+![BIND9](https://img.shields.io/badge/BIND9-2168A0?style=for-the-badge&logoColor=white)
+![Capistrano](https://img.shields.io/badge/Capistrano-CC0000?style=for-the-badge&logoColor=white)
 
-### Containers & Orchestration
+### Containers, Orchestration & Virtualization
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![ECS](https://img.shields.io/badge/Amazon_ECS-FF9900?style=for-the-badge&logo=amazon-ecs&logoColor=white)
+![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-FF9900?style=for-the-badge&logo=amazon-ecs&logoColor=white)
+![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=for-the-badge&logo=amazon-eks&logoColor=white)
+![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white)
+![containerd](https://img.shields.io/badge/containerd-575757?style=for-the-badge&logo=containerd&logoColor=white)
+![Flannel CNI](https://img.shields.io/badge/Flannel_CNI-3970E4?style=for-the-badge&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefik-proxy&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4B?style=for-the-badge&logo=argo&logoColor=white)
+![KVM](https://img.shields.io/badge/KVM-FF6611?style=for-the-badge&logo=qemu&logoColor=white)
+![libvirt](https://img.shields.io/badge/libvirt-D71F25?style=for-the-badge&logoColor=white)
+![QEMU](https://img.shields.io/badge/QEMU-FF6611?style=for-the-badge&logo=qemu&logoColor=white)
+![Hyper-V](https://img.shields.io/badge/Hyper--V-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
+![Vagrant](https://img.shields.io/badge/Vagrant-1868F2?style=for-the-badge&logo=vagrant&logoColor=white)
 
 ### CI/CD & Automation
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
