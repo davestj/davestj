@@ -176,7 +176,7 @@ print(f"Profile Version: 3.0.0 | Maintained since: {me.profile_created}")
   <!-- I'm creating custom achievement badges that highlight my unique qualifications -->
   ![20+ Years Experience](https://img.shields.io/badge/Experience-20%2B%20Years-gold?style=for-the-badge&logo=amazon-aws&logoColor=white)
   ![AWS Beta Tester](https://img.shields.io/badge/AWS%20Beta%20Tester-Since%202003-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-  ![GitHub Member](https://img.shields.io/badge/GitHub%20Member-Since%202010-181717?style=for-the-badge&logo=github&logoColor=white)
+  ![GitHub Member](https://img.shields.io/badge/GitHub%20Member-Since%202008-181717?style=for-the-badge&logo=github&logoColor=white)
   ![Repositories](https://img.shields.io/badge/Public%20Repos-50%2B-green?style=for-the-badge&logo=github&logoColor=white)
   ![Contributions](https://img.shields.io/badge/Contributions-10K%2B-blue?style=for-the-badge&logo=github&logoColor=white)
   ![Languages](https://img.shields.io/badge/Languages-15%2B-purple?style=for-the-badge&logo=code&logoColor=white)
@@ -293,6 +293,17 @@ timeline
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![ELK](https://img.shields.io/badge/Elastic_Stack-005571?style=for-the-badge&logo=elastic-stack&logoColor=white)
 
+### AI & Prompt Engineering
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Anthropic API](https://img.shields.io/badge/Anthropic_API-181818?style=for-the-badge&logo=anthropic&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-74AA9C?style=for-the-badge&logo=openai&logoColor=white)
+![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white)
+![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-181717?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
+![MCP](https://img.shields.io/badge/Model_Context_Protocol-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+
 ---
 
 ## 📈 My Contribution Metrics
@@ -386,6 +397,33 @@ Qt6 cross-platform builds for macOS (universal ARM64/x86), Linux (Debian/Ubuntu/
 
 ### 📦 Public-by-Default Open Source
 50+ public repositories on GitHub. Every product, every config example, every architectural decision in the open. License keys gated, source code free. Two-decade career, now shipping in plain sight.
+
+---
+
+## 🤖 How I Work With AI
+
+I'm not an AI hobbyist. I'm a senior engineer who has integrated LLM agents into every layer of my development lifecycle — from architecture decisions and code generation, through CI/CD and deployment, to security audits, content production, and operations. The Mcaster1 ecosystem above wasn't built *by* AI — it was built *with* AI, the way a senior carpenter uses a power tool: I drive, the agent multiplies.
+
+### The Tools I Actually Use
+- **Claude (Anthropic) + Claude Code** — my daily driver. Used end-to-end for code generation, refactors, multi-repo operations, history rewrites, infrastructure provisioning, and live ops. I run agentic workflows that span days of work in a single session.
+- **ChatGPT + OpenAI API** — research, brainstorming, second-opinion validation, occasional code review on Claude's output.
+- **Cursor IDE** — for inline, in-editor pair-programming when the work is dense and the file is in front of me.
+- **GitHub Copilot** — autocomplete-grade assist for boilerplate, test scaffolds, type definitions.
+- **Ollama** — local models for offline / private contexts (no data leaves the box).
+- **Model Context Protocol (MCP)** — for agentic integrations with external systems where the model needs structured tool access.
+- **Anthropic API / OpenAI API** — embedded into Mcaster1 products themselves (the AI persona system in `Mcaster1Studio`, "Artist Intel" in `Mcaster1DAWCast`).
+
+### What I'm Actually Good At
+- **Multi-turn agentic orchestration**: I run agents on real production work — refactoring, history rewrites, force-pushes, security scrubs across 18+ repos in one session — not toy demos. I know when to delegate, when to intervene, and when to escalate.
+- **Tight, directive prompting**: I don't over-specify. I trust the model to fill gaps and course-correct it fast when off-track. Three-word imperatives beat five-paragraph briefs when the context is loaded.
+- **Recognizing model failure modes**: When an agent makes a unilateral architectural decision, leaks a literal secret into a blog post, or misinterprets scope, I catch it and recover the system state — including reverting destructive operations like force-pushes when needed.
+- **AI-in-the-product, not just AI-in-the-workflow**: The Mcaster1 ecosystem has AI features built in — persona generation, content suggestions, audio analysis — using the same API primitives I use for development.
+- **Embedded prompt discipline**: Every product's prompts are versioned, audited, and treated as source code. No "magic strings."
+
+### What I Won't Pretend
+I'm not a research scientist. I don't train models. I don't publish ML papers. What I *do* is build production systems with AI as a primary engineering multiplier, and I've shipped real software this way — not vibe-coded screenshots, not toy chatbots. The repositories above are receipts.
+
+If you're hiring for someone who can both architect a system AND operate it AND ship with AI agents in the loop end-to-end, that's the job description I've been writing for myself for the last three years.
 
 ---
 
