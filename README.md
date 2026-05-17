@@ -52,7 +52,7 @@
 
 <!-- Professional Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=180&section=header&text=DevSecOps%20%7C%20Cloud%20Architecture%20%7C%20Automation&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=35" alt="Header" />
+  <img src="https://mcaster1.com/github/api/banner.php?text=DevSecOps+%7C+Cloud+Architecture+%7C+Automation&theme=tokyonight&width=900&height=180" alt="Header" />
 </div>
 
 <!-- Build Status and Contact Badges -->
@@ -372,15 +372,25 @@ Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to
   <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800" alt="365-day contribution activity"/>
 </div>
 
-<!-- Profile Views Counter - Tracking since 2023 -->
+<!-- 🆕 NOVEL: Recent push activity per repo — where I'm working RIGHT NOW -->
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=davestj&color=blueviolet&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
+  <img src="https://mcaster1.com/github/api/pushes.php?user=davestj&theme=tokyonight&days=30" alt="Recent push activity per repo — last 30 days sparkline grid"/>
 </div>
 
-<!-- Activity Summary Badges -->
+<!-- PR + Issue activity card (self-hosted, replaces shields.io dynamic JSON) -->
 <div align="center">
+  <img src="https://mcaster1.com/github/api/prs.php?user=davestj&theme=tokyonight" alt="PRs and Issues — opened, merged, reviewed"/>
+</div>
+
+<!-- 🆕 NOVEL: AI-assistance signal — honest read on how much shipping is AI-augmented -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/ai-cred.php?user=davestj&theme=tokyonight" alt="AI-assisted commit percentage with per-tool breakdown"/>
+</div>
+
+<!-- Profile Views Counter (self-hosted) + Commits-this-year (self-hosted) -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/views.php?user=davestj&theme=tokyonight&label=Profile+Views" alt="Profile Views"/>
   <img src="https://mcaster1.com/github/api/commits-year.php?user=davestj&year=2026&theme=tokyonight" alt="Commits in 2026"/>
-  <img src="https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white" alt="Pull Requests"/>
 </div>
 
 ---
@@ -596,7 +606,7 @@ This section is written to be scannable by automated systems and by recruiters s
 ## 💡 My Philosophy
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=Infrastructure%20as%20Code%20is%20not%20just%20a%20practice%2C%20it's%20a%20mindset.%20I%20believe%20in%20building%20systems%20that%20are%20secure%20by%20design%2C%20scalable%20by%20nature%2C%20and%20maintainable%20by%20default.&author=David%20St.%20John" />
+  <img src="https://mcaster1.com/github/api/quote.php?theme=tokyonight&width=900" alt="Philosophy quote"/>
 </div>
 
 ---
@@ -625,7 +635,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
 
 <!-- Footer with current date context -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=70" alt="Footer" />
+  <img src="https://mcaster1.com/github/api/banner.php?text=Thanks+for+visiting%21&theme=tokyonight&width=900&height=110" alt="Footer" />
   
   <sub>📅 Last updated: 2026-05-16 21:34 PDT &nbsp;·&nbsp; Profile active since November 2023 &nbsp;·&nbsp; GitHub member since 2008</sub>
 </div>
