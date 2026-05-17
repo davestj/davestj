@@ -71,6 +71,10 @@
 
 </div>
 
+<div align="center">
+  <sub>📅 <strong>README last updated:</strong> 2026-05-16 21:34 PDT &nbsp;·&nbsp; <strong>Version:</strong> 4.0.0 &nbsp;·&nbsp; <a href="https://github.com/davestj/davestj/commits/master">commit history</a></sub>
+</div>
+
 ---
 
 ## 🚀 About Me
@@ -628,7 +632,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=70" alt="Footer" />
   
-  <sub>Last updated: May 16, 2026 | Profile active since November 2023 | GitHub member since 2008</sub>
+  <sub>📅 Last updated: 2026-05-16 21:34 PDT &nbsp;·&nbsp; Profile active since November 2023 &nbsp;·&nbsp; GitHub member since 2008</sub>
 </div>
 
 <!-- 
