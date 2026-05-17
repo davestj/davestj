@@ -175,7 +175,7 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 
 <!-- Self-hosted activity area chart — mcaster1.com/github/api/activity.php -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="365-day contribution activity area chart"/>
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&v=2026-05-17b" alt="365-day contribution activity area chart"/>
 </div>
 
 ---
@@ -373,7 +373,7 @@ Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to
 
 <!-- Self-hosted contribution activity area chart -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800&v=2026-05-17" alt="365-day contribution activity"/>
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800&v=2026-05-17b" alt="365-day contribution activity"/>
 </div>
 
 <!-- 🆕 NOVEL: Recent push activity per repo — where I'm working RIGHT NOW -->
