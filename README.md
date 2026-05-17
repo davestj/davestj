@@ -383,7 +383,7 @@ timeline
 <div align="center">
   
   <!-- I'm creating custom activity badges that don't depend on external services -->
-  ![Commits This Year](https://img.shields.io/badge/dynamic/json?color=blue&label=Commits%20in%202026&query=%24.total&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Dauthor%3Adavestj%2Bcommitter-date%3A%3E%3D2026-01-01&style=for-the-badge&logo=git&logoColor=white)
+  ![Commits This Year](https://img.shields.io/badge/Commits%20in%202026-74%2B-blue?style=for-the-badge&logo=git&logoColor=white)
   ![Pull Requests](https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white)
   ![Code Reviews](https://img.shields.io/badge/Code%20Reviews-500%2B-purple?style=for-the-badge&logo=github&logoColor=white)
   
