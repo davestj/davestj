@@ -2,7 +2,7 @@
  * README.md - GitHub Profile for David St. John
  * Author: David St. John (davestj)
  * Created: November 2023
- * Last Modified: August 11, 2025
+ * Last Modified: May 16, 2026
  * Purpose: Professional GitHub profile showcasing my 20+ years of DevSecOps experience
  * File Path: /README.md (root of davestj/davestj repository)
  * 
@@ -20,6 +20,17 @@
  *   - Fixed GitHub Actions workflow conflicts with preserve-clean-restore strategy
  *   - Implemented multiple fallback strategies for all external services
  *   - Added comprehensive inline documentation for maintenance
+ * - v4.0.0 (2026-05): Mcaster1 ecosystem refresh + AI-engineering narrative
+ *   - Replaced generic DevOps bullets with actual Mcaster1 / Celenite Stack work
+ *   - Expanded Programming & Scripting from 7 to 17 languages
+ *   - Expanded Monitoring & Logging from 3 badges to 14 (Elasticsearch/Logstash/Kibana
+ *     split out, added OpenSearch, Graylog, rsyslog, Nagios, PagerDuty, Opsgenie,
+ *     AlertManager, Loki, Mcaster1StackSmith Telemetry)
+ *   - Removed broken external services (github-readme-stats 503, metrics.lecoq.io 500,
+ *     two dead Heroku endpoints) and swapped to working demolab.com equivalents
+ *   - Corrected GitHub-member badge to 2008 (private-beta era, predates the API)
+ *   - Added Founder Story, For Investors, For Recruiters & ATS Systems sections
+ *   - Added How I Work With AI section with honest framing of practice vs ML research
  * 
  * Git Commit Messages from History:
  * - 2023-11-15: "Initial commit - Creating my professional GitHub profile"
@@ -31,6 +42,7 @@
  * - 2025-04-08: "fix: Improve responsive design for mobile"
  * - 2025-06-20: "feat: Add CI/CD build status monitoring"
  * - 2025-08-11: "fix: Resolve all external dependencies and workflow conflicts"
+ * - 2026-05-16: "refresh: Mcaster1 ecosystem narrative + 2026 tech stack backfill"
 -->
 
 <!-- Profile Header with Dynamic Typing Effect -->
@@ -72,30 +84,34 @@ I'm a seasoned DevSecOps professional with over two decades of experience in clo
 My Professional Journey in Code
 Author: David St. John
 Date Created: 2023-11-15
-Last Updated: 2025-08-11
-Version: 3.0.0
+Last Updated: 2026-05-16
+Version: 4.0.0
 """
 
 class DevSecOpsArchitect:
-    """I represent my professional identity and expertise as of August 2025"""
+    """I represent my professional identity and expertise as of 2026"""
     
     def __init__(self):
         self.name = "David St. John"
         self.role = "DevSecOps Lead & Cloud Architect"
         self.experience_years = 20
         self.aws_journey_start = 2003  # I was there from the beginning
+        self.github_member_since = 2008  # Private-beta era, predates the public API
         self.profile_created = "2023-11-15"  # When I established this GitHub showcase
-        self.last_updated = "2025-08-11"  # Today's comprehensive improvements
+        self.last_updated = "2026-05-16"  # Mcaster1 ecosystem expansion + Celenite Stack
         
     def my_core_expertise(self):
-        """I specialize in these key areas as of 2025"""
+        """I specialize in these key areas as of 2026"""
         return {
-            "Cloud Platforms": ["AWS (Beta Tester 2003)", "Azure", "Citrix Xen"],
-            "IaC": ["Terraform", "CloudFormation", "Ansible", "Chef"],
-            "Containers": ["Docker", "Kubernetes", "ECS", "EKS"],
-            "CI/CD": ["Jenkins", "GitLab CI", "ArgoCD"],
-            "Security": ["Snyk", "SonarCube", "Black Duck", "Compliance"],
-            "Monitoring": ["ELK Stack", "Prometheus", "Grafana", "DataDog"]
+            "Cloud Platforms": ["AWS (Beta Tester 2003)", "Azure", "OVHcloud"],
+            "IaC": ["Terraform", "CloudFormation", "Ansible", "Packer", "Vagrant"],
+            "Containers & Virt": ["Docker", "Kubernetes", "EKS", "ECS", "KVM", "libvirt", "Hyper-V"],
+            "CI/CD": ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD", "Capistrano"],
+            "Security": ["Snyk", "SonarQube", "HashiCorp Vault", "Keycloak", "secure SDLC"],
+            "Monitoring": ["Prometheus", "Grafana", "Elastic Stack", "OpenSearch", "Graylog"],
+            "Languages": ["C++17", "C", "Python", "Go", "PHP", "TypeScript", "Ruby", "Java"],
+            "AI Tooling": ["Claude Code", "Anthropic API", "OpenAI API", "Cursor", "MCP"],
+            "Ecosystem": ["Mcaster1 (18+ apps)", "Celenite Stack", "CasterClub"]
         }
     
     def my_philosophy(self):
@@ -112,7 +128,8 @@ class DevSecOpsArchitect:
         return {
             "2023": "Initial profile creation with basic information",
             "2024": "Added interactive visualizations and metrics",
-            "2025": "Achieved full automation and reliability"
+            "2025": "Reliability overhaul — removed broken external services",
+            "2026": "Mcaster1 ecosystem refresh, Celenite Stack, AI-engineering narrative"
         }
 
 # I am continuously evolving...
@@ -203,7 +220,7 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 
 ```mermaid
 timeline
-    title My Career Evolution in DevSecOps (Updated August 2025)
+    title My Career Evolution in DevSecOps (Updated 2026)
     
     2000-2006 : Founded MediaCast1
                 : Pioneered streaming media solutions
@@ -233,10 +250,15 @@ timeline
                 : Serverless architecture
                 : Infrastructure automation
     
-    2024-2025 : Current Focus
-                : Continuous learning
-                : Open source contributions
-                : Mentoring next generation
+    2024-2025 : Mcaster1 Ecosystem Founder
+                : Designed the Celenite Stack pattern
+                : Shipped first 8 production apps
+                : Built Mcaster1StackSmith control plane
+    
+    2025-2026 : Current Focus
+                : 18+ apps in active development
+                : AI-native engineering workflow
+                : Solo, self-funded, public-by-default
 ```
 
 ---
@@ -357,7 +379,7 @@ timeline
 <div align="center">
   
   <!-- I'm creating custom activity badges that don't depend on external services -->
-  ![Commits This Year](https://img.shields.io/badge/dynamic/json?color=blue&label=Commits%20in%202025&query=%24.total&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Dauthor%3Adavestj&style=for-the-badge&logo=git&logoColor=white)
+  ![Commits This Year](https://img.shields.io/badge/dynamic/json?color=blue&label=Commits%20in%202026&query=%24.total&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fcommits%3Fq%3Dauthor%3Adavestj%2Bcommitter-date%3A%3E%3D2026-01-01&style=for-the-badge&logo=git&logoColor=white)
   ![Pull Requests](https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white)
   ![Code Reviews](https://img.shields.io/badge/Code%20Reviews-500%2B-purple?style=for-the-badge&logo=github&logoColor=white)
   
@@ -606,7 +628,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=100&section=footer&text=Thanks%20for%20visiting!&fontSize=24&fontColor=fff&animation=twinkling&fontAlignY=70" alt="Footer" />
   
-  <sub>Last updated: August 11, 2025 | Profile active since November 2023</sub>
+  <sub>Last updated: May 16, 2026 | Profile active since November 2023 | GitHub member since 2008</sub>
 </div>
 
 <!-- 
