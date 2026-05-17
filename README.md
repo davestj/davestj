@@ -314,8 +314,19 @@ timeline
 
 ### Monitoring & Logging
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![AlertManager](https://img.shields.io/badge/AlertManager-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![ELK](https://img.shields.io/badge/Elastic_Stack-005571?style=for-the-badge&logo=elastic-stack&logoColor=white)
+![Loki](https://img.shields.io/badge/Grafana_Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Logstash](https://img.shields.io/badge/Logstash-005571?style=for-the-badge&logo=logstash&logoColor=white)
+![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
+![OpenSearch](https://img.shields.io/badge/OpenSearch-005EB8?style=for-the-badge&logo=opensearch&logoColor=white)
+![Graylog](https://img.shields.io/badge/Graylog-FF3633?style=for-the-badge&logo=graylog&logoColor=white)
+![rsyslog](https://img.shields.io/badge/rsyslog-CC0000?style=for-the-badge&logoColor=white)
+![Nagios](https://img.shields.io/badge/Nagios-89BF04?style=for-the-badge&logo=nagios&logoColor=white)
+![PagerDuty](https://img.shields.io/badge/PagerDuty-06AC38?style=for-the-badge&logo=pagerduty&logoColor=white)
+![Opsgenie](https://img.shields.io/badge/Opsgenie-172B4D?style=for-the-badge&logo=opsgenie&logoColor=white)
+![Mcaster1StackSmith Telemetry](https://img.shields.io/badge/Mcaster1StackSmith_Telemetry-7B42BC?style=for-the-badge&logoColor=white)
 
 ### AI & Prompt Engineering
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
@@ -541,7 +552,7 @@ This section is written to be scannable by automated systems and by recruiters s
 
 **Databases:** MySQL, MariaDB, PostgreSQL, Amazon Aurora, MongoDB, Redis, Microsoft SQL Server.
 
-**Monitoring, logging, observability:** Prometheus, Grafana, AlertManager, Elastic Stack (Elasticsearch / Logstash / Kibana), Loki.
+**Monitoring, logging, observability:** Prometheus, AlertManager, Grafana, Grafana Loki, Elasticsearch, Logstash, Kibana, Elastic Stack (ELK), OpenSearch, Graylog, rsyslog, Nagios, PagerDuty, Opsgenie. Also: self-built agent-pull telemetry layer inside Mcaster1StackSmith (heartbeat agents → time-series tables → live dashboards).
 
 **Web and mail stack experience:** NGINX, PHP-FPM, HAProxy, Apache, Postfix, Dovecot, Rspamd, OpenDKIM, Roundcube, Nextcloud, BIND9.
 
