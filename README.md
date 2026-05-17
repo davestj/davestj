@@ -381,6 +381,11 @@ Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to
   <img src="https://mcaster1.com/github/api/pushes.php?user=davestj&theme=tokyonight&days=30" alt="Recent push activity per repo — last 30 days sparkline grid"/>
 </div>
 
+<!-- 🆕 NOVEL: GitHub Actions / CI-CD health — overall success rate + per-repo breakdown -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/workflows.php?user=davestj&theme=tokyonight" alt="GitHub Actions health — success rate, total runs, per-repo CI status"/>
+</div>
+
 <!-- PR + Issue activity card (self-hosted, replaces shields.io dynamic JSON) -->
 <div align="center">
   <img src="https://mcaster1.com/github/api/prs.php?user=davestj&theme=tokyonight" alt="PRs and Issues — opened, merged, reviewed"/>
