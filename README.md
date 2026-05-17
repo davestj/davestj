@@ -122,6 +122,20 @@ print(f"Profile Version: 3.0.0 | Maintained since: {me.profile_created}")
 
 ---
 
+## 📖 My Founder Story
+
+I started writing code in the mid-90s, before "DevOps" was a word and before "the cloud" existed as a product category. I came up through internet service providers, broadcast/streaming startups, and infrastructure-heavy product companies — the kind of environments where someone has to build the platform underneath the application, and that someone tended to be me.
+
+I was an AWS public-beta participant in 2003-2006, which is where I learned that running infrastructure at scale is a different discipline than writing applications. That distinction shaped the rest of my career. The last two decades have been spent in DevSecOps and platform-engineering roles — cloud migrations, CI/CD pipelines, compliance-graded systems, secure SDLC — at companies of varying sizes.
+
+The reason Mcaster1 exists is that I've spent enough time around independent broadcasters, podcasters, and streamers to know the tooling they have access to is two decades behind the stack the rest of the industry uses. Streaming protocols haven't really moved past Icecast and Shoutcast2. Metadata is fragile. Encoder UX is hostile. YP discovery is broken. The professional tools cost more than the broadcasters earn, and the free tools haven't been seriously maintained in years.
+
+So I started building. First a few utilities, then a few products, then an ecosystem. The work is solo for now — eighteen apps and counting, on a single architectural pattern I named the [Celenite Stack](https://mcaster1.com/celenitestack/). It's self-funded. I'm three years into this, with no co-founder, and I keep shipping.
+
+I'm not trying to make this sound bigger than it is. It's a one-person platform play in a niche that most VCs would dismiss on the first page of a deck. But the work is real, the code is public, and the products are running. That's the story so far.
+
+---
+
 ## 📊 My GitHub Analytics
 
 <!-- GitHub Streak Stats -->
@@ -402,56 +416,54 @@ Qt6 cross-platform builds for macOS (universal ARM64/x86), Linux (Debian/Ubuntu/
 
 ## 🤖 How I Work With AI
 
-I'm not an AI hobbyist. I'm a senior engineer who has integrated LLM agents into every layer of my development lifecycle — architecture decisions, code generation, CI/CD, deployment, security audits, content production, live operations. The Mcaster1 ecosystem above wasn't built *by* AI. It was built *with* AI, the way a senior carpenter uses a power tool: I drive, the agent multiplies.
+I use AI agents as part of my normal engineering workflow — for code generation, refactors, deployments, content drafting, and operations. The projects listed above were built in collaboration with AI tools rather than entirely by hand. This section is for anyone curious about where my own capability ends and the tooling's begins. It's meant as a description of practice, not a sales pitch.
 
-Every project in the Latest Projects section was shipped in collaboration with AI agents. **That's the receipt.**
+### The tools I use day-to-day
 
-### The Tools I Actually Use Day-to-Day
+- **[Claude](https://claude.ai) + [Claude Code](https://claude.com/claude-code)** *(Anthropic)* — my primary tool. End-to-end for code generation, multi-repo refactors, history operations, infrastructure provisioning, and ops. Sessions can run for hours at a time.
+- **[ChatGPT](https://chat.openai.com) + OpenAI API** — research, brainstorming, second-opinion validation, occasional cross-review on output from other models.
+- **[Cursor](https://cursor.com) IDE** — in-editor pair programming for dense, file-local work.
+- **[GitHub Copilot](https://github.com/features/copilot)** — autocomplete-grade help for boilerplate, tests, type definitions, repetitive structure.
+- **[Ollama](https://ollama.com)** — local model serving for offline or private contexts.
+- **[Model Context Protocol (MCP)](https://modelcontextprotocol.io)** — structured agentic tool integration when the model needs typed access to external systems.
+- **Anthropic API / OpenAI API** — embedded inside Mcaster1 products: the AI persona system in `Mcaster1Studio`, Artist Intel in `Mcaster1DAWCast`, anomaly baselines in `Mcaster1BackDraft`.
 
-- **[Claude](https://claude.ai) + [Claude Code](https://claude.com/claude-code)** *(Anthropic)* — daily driver. End-to-end for code generation, multi-repo refactors, history rewrites, infrastructure provisioning, live ops. Sessions routinely span hours of agentic work with dozens of force-push-grade decisions.
-- **[ChatGPT](https://chat.openai.com) + OpenAI API** — research, brainstorming, second-opinion validation, occasional cross-review on Claude's output. Different models catch different mistakes.
-- **[Cursor](https://cursor.com) IDE** — in-editor pair programming when the work is dense and the file's in front of me.
-- **[GitHub Copilot](https://github.com/features/copilot)** — autocomplete-grade assist for boilerplate, test scaffolds, type definitions, repetitive structures.
-- **[Ollama](https://ollama.com)** — local model serving for offline / private contexts where nothing leaves the box.
-- **[Model Context Protocol (MCP)](https://modelcontextprotocol.io)** — structured agentic tool integration for cases where the model needs typed access to external systems (databases, APIs, internal services).
-- **Anthropic API / OpenAI API** — embedded directly inside Mcaster1 products: the AI persona system in `Mcaster1Studio`, "Artist Intel" in `Mcaster1DAWCast`, anomaly baselines in `Mcaster1BackDraft`.
+### How I shape model behavior (without an ML lab)
 
-### How I "Train" My Models (Without an ML Lab)
+I don't fine-tune weights and I don't run training jobs. What I do is condition the behavior of off-the-shelf models through context engineering, and over time the agents on my projects converge toward the patterns I expect:
 
-I don't run RLHF jobs. I don't fine-tune weights. I don't operate H100 clusters. But I shape model behavior in production every day, through the techniques that actually move the needle for working engineers:
+- **Persistent memory** — Each session writes durable behavioral notes to disk. Corrections become hard rules in subsequent sessions; validated patterns become defaults.
+- **Project instruction files** — Every repo has a `CLAUDE.md` the agent reads on start: server inventory, SSH alias maps, architectural ground rules, gotchas from prior incidents.
+- **Tight feedback loops** — When the agent makes a unilateral decision or oversteps, I correct it, fix the system state, and record the lesson the same session.
+- **Versioned prompts** — Every product's runtime prompts live in version control. Diffed, reviewed, audited.
+- **Multi-model cross-checking** — Higher-stakes outputs get a second pass from a different model family.
 
-- **Persistent memory systems** — Every session writes durable behavioral memory to disk. A correction in one session ("never publish real secrets in public artifacts") becomes a hard rule in the next. A validated pattern ("the `.example` + gitignore split was the right call") becomes the default. Over weeks, the agent's behavior on my projects converges with my preferences — not because the weights changed, but because the context window does.
-- **Project-level instruction files** — Every repo has its own `CLAUDE.md` the agent reads on session start: server inventory, SSH alias maps, hard architectural rules (`"never reverse-proxy Celenite stack apps"`), gotchas from prior incidents. In-context learning with a paper trail.
-- **Tight feedback loops on bad calls** — When an agent makes a unilateral infrastructure decision or oversteps scope, I push back hard, fix the system state, and write the correction to memory the same session. Next time, that failure mode is structurally blocked, not just less likely.
-- **Versioned prompts as source code** — Every product's runtime prompts live in version control. Diffed, reviewed, audited. I treat prompt drift the same way I treat config drift: a bug.
-- **Multi-model cross-validation** — High-stakes outputs (architectural decisions, security-sensitive code) get a second pass from a different model family. Different training mixes catch different mistakes.
+This is in-context learning with a paper trail, not training in the ML sense. The framing matters: it's an honest description of what's happening.
 
-It's not gradient descent. It's behavioral conditioning through systematic context engineering — and the operational outcome is the same: an agent that converges on doing the right thing on my problems.
+### What I'm comfortable claiming
 
-### What I'm Honestly Good At
+- **Multi-turn agentic orchestration on real systems.** Multi-repo refactors, history rewrites, security scrubs across thousands of commits, multi-step Kubernetes provisioning, cross-fleet Ansible runs. Sessions are long; decisions are mostly atomic; recovery from a bad call is part of the workflow.
+- **Directive prompting.** I don't over-specify. Short imperatives once the context is loaded; course-correct fast when the agent drifts.
+- **Recognizing failure modes in real time.** Unilateral infra decisions, scope creep, hallucinated APIs, a literal secret accidentally pasted into a generated artifact — I catch these while they happen, recover the system state, and record the correction.
+- **AI inside the product, not only in the workflow.** Several Mcaster1 products use AI APIs in customer-facing features; the same primitives I use for development.
+- **Prompt discipline as engineering discipline.** Versioned, testable, reviewable. Treated as source code, not magic strings.
+- **Pushing back when the agent is wrong.** It happens often enough to matter. Catching the wrong call before it's committed is a real part of the work.
 
-- **Multi-turn agentic orchestration on production systems.** I run agents on real work — 18-repo history rewrites with force-pushes, security scrubs spanning thousands of commits, cross-fleet Ansible deploys, multi-step Kubernetes provisioning. Not toy demos. Sessions are hours long, decisions are mostly atomic, and recovery from a bad call is built into the workflow.
-- **Tight, directive prompting.** I don't over-specify. Three-word imperatives beat five-paragraph briefs once the context is loaded. The model fills gaps; I course-correct fast when it drifts. Most users do the opposite — long briefs, slow corrections, ambient frustration.
-- **Recognizing model failure modes in real time.** Unilateral infra decisions, scope creep, hallucinated APIs, a literal secret accidentally pasted into a generated blog post — I catch these *while they happen*, recover the system state (including reverting destructive force-pushes), and write the correction to memory the same session so the pattern doesn't repeat.
-- **AI-in-the-product, not just AI-in-the-workflow.** My products *use* AI. Persona generation, content suggestion, audio analysis, anomaly baselines — same API primitives I use for development, embedded in customer-facing features. I know both sides of the wire.
-- **Prompt engineering as engineering discipline.** No "vibe prompts." Every template is versioned. Every output is testable. Every regression is reviewable. Prompts are code; treat them like it.
-- **Knowing when to ignore the agent.** Sometimes the model wants to add nginx in front of a single-binary daemon. Sometimes it wants to write a framework where two `if` statements would do. I push back. The Mcaster1 ecosystem stays simple because *I* enforce the simplicity, not because the agent suggested it.
+### Examples from this year
 
-### Production Receipts (Shipped This Year)
+- **[Mcaster1StackSmith](https://github.com/davestj/Mcaster1StackSmith)** — A K8s, KVM, and container control plane scaffolded across multiple agent sessions, then iterated to production-grade.
+- **[Celenite Stack](https://mcaster1.com/celenitestack/)** — Architectural pattern developed iteratively with AI as a reviewer, then named, documented, and applied across 8+ products.
+- **18-repo history rewrite + secret scrub** — Completed in a single session with multi-turn agent orchestration, including a couple of recoveries from agent missteps along the way.
+- **[Mcaster1BackDraft](https://github.com/davestj/Mcaster1BackDraft) 15-script credential refactor** — Inline DB credentials migrated to centralized config defines across 15 task scripts, with `php -l` validation in the loop.
+- **Mcaster1 `.bashrc` series** — 7 long-form articles on shell environment design, drafted and revised collaboratively, then published.
 
-- **[Mcaster1StackSmith](https://github.com/davestj/Mcaster1StackSmith)** — A full K8s + KVM + container control plane, scaffolded across multiple agent sessions, hundreds of files, production-grade, running my own fleet. Not vibe-coded.
-- **[Celenite Stack](https://mcaster1.com/celenitestack/)** — Architectural pattern developed iteratively with AI as architecture reviewer, then named, documented, and applied across 8+ shipped products. The "C" pun is mine; the architecture is mine; the iteration loop ran through AI.
-- **18-repo history rewrite + secret scrub** — Completed in a single afternoon with multi-turn agent orchestration. Force-pushed live. Verified clean post-rewrite. Recovery operations included.
-- **[Mcaster1BackDraft](https://github.com/davestj/Mcaster1BackDraft) 15-script refactor** — Inline credentials → centralized config defines across 15 task scripts: agent-driven, `php -l` validated, one clean commit, zero regressions.
-- **Mcaster1 .bashrc engineering series** — 7 long-form technical articles on shell environment design, drafted and revised in-collaboration, then published live.
+### What I won't claim
 
-### What I Won't Pretend
+- I'm not a research scientist, I don't train models, and I don't publish ML papers.
+- I don't fine-tune, distill, or operate accelerator clusters.
+- I'm not a "prompt engineer" in the job-title sense. I'm a senior infrastructure engineer who's reasonably fluent at directing language models.
 
-- I'm not a research scientist. I don't train models. I don't publish ML papers.
-- I don't fine-tune. I don't run distillation. I don't operate fleets of accelerators.
-- I'm not a "prompt engineer" in the LinkedIn-job-title sense. I'm a senior infrastructure engineer who happens to be unusually fluent at directing language models.
-
-What I *do* is build production systems with AI as a primary engineering multiplier — and ship real software, in plain sight, with the repos above as receipts. If you're hiring someone who can architect a system, operate it, and ship with AI agents end-to-end in the loop, that's the job description I've been writing for myself for the last three years.
+The repos in the section above are the actual record. If a team is looking for someone who works this way, I'd be glad to talk.
 
 ---
 
@@ -469,6 +481,73 @@ What I *do* is build production systems with AI as a primary engineering multipl
 - 📌 Reduced infrastructure costs by 40% through optimization
 - 📌 Mentored 50+ engineers in DevSecOps practices
 - 📌 Maintained this GitHub profile showcase for 2+ years
+
+---
+
+## 💼 For Investors
+
+I'm building Mcaster1: a multi-product ecosystem for broadcasters, podcasters, and streamers — desktop applications, server daemons, infrastructure tooling, and a DevSecOps control plane (`Mcaster1StackSmith`) that runs the platform itself.
+
+A few practical details that may be useful in evaluating fit:
+
+- **Architecture is deliberately capital-efficient.** Every product is on a single architectural pattern (the [Celenite Stack](https://mcaster1.com/celenitestack/)) — a compiled C++17 daemon with embedded HTTP and FastCGI to PHP-FPM. Single binary, no reverse proxy in front, no sidecars, no Docker overhead. One systemd unit per product. The result is lower infrastructure cost per product surface than a microservices approach in the same domain would produce.
+- **The work is solo and self-funded.** Eighteen apps so far, no co-founders, no outside capital, and runway measured in weeks at any given time. The reason this is interesting isn't the romance of the bootstrap — it's that the pace of shipping has been sustained for three years without venture support.
+- **Everything is public.** Every line of code is on GitHub. Every architectural decision is documented. Every product page is live. Diligence can be done on a weekend without an NDA, and there's no proprietary blackbox that breaks under inspection.
+- **Revenue model is license-gated open source.** Source code is free; product keys are paid. Common pattern for tools that serve professionals in a niche industry.
+- **The market.** Broadcasting and streaming look small from the outside, and the long tail of independent stations, podcasters, and broadcasters is much larger than the AWS Elemental enterprise pricing table addresses. The tooling for that long tail has been underinvested in for over a decade.
+
+What I'm interested in: enough capital to add one engineer and one product partner, and an investor who understands that a niche done well can become a category.
+
+Easiest path forward: an introductory call. I can speak to architecture, market, technical risk, and the operating model in detail — and every claim made here is verifiable in the repos.
+
+---
+
+## 🎯 For Recruiters & ATS Systems
+
+This section is written to be scannable by automated systems and by recruiters skimming for fit. It's a flat keyword listing of what I do, with no marketing language.
+
+**Role aliases I'm a fit for:** Senior DevSecOps Engineer · Principal Cloud Architect · Staff Software Engineer · Site Reliability Engineer · Platform Engineer · Engineering Lead · Director of Engineering · Solutions Architect · Cloud Infrastructure Engineer · Kubernetes Engineer · Linux Systems Engineer · C++ Backend Engineer · Full-Stack Engineer · Systems Architect.
+
+**Years of experience:**
+- Software engineering: 20+ years
+- Linux systems administration: 22+ years
+- Cloud infrastructure: 18+ years (since the AWS public-beta period, 2003)
+- DevSecOps / platform engineering: 15+ years
+- Kubernetes in production: 6+ years
+
+**Primary domain areas:** DevSecOps, cloud architecture, Kubernetes, infrastructure-as-code, CI/CD pipelines, secrets management, identity and access management, site reliability engineering, observability, compliance (SOC 2, HIPAA, PCI), platform engineering, security-conscious software development, secure software development lifecycle (SSDLC).
+
+**Programming languages and runtimes:** C, C++17, Python 3, PHP 8.4, JavaScript / Node.js, Go, Bash, Groovy, SQL.
+
+**Cloud platforms:** AWS (EC2, EKS, ECS, ECR, Lambda, RDS, Aurora, S3, IAM, CloudFormation, VPC, ALB, Route53, ACM, CodePipeline, CodeBuild, CloudWatch, Systems Manager, Secrets Manager), Microsoft Azure (AKS, ARM, Active Directory, Azure DevOps), OVHcloud, on-premise hypervisor environments.
+
+**Container and orchestration:** Kubernetes, Docker, containerd, Helm, ArgoCD, Flannel CNI, Traefik, NGINX Ingress, KVM, libvirt, QEMU, Hyper-V, MinIO (S3-compatible storage).
+
+**Infrastructure-as-Code and configuration management:** Terraform, CloudFormation, Ansible, HashiCorp Packer, Vagrant, cloud-init, SaltStack, Capistrano.
+
+**CI/CD:** Jenkins, GitLab CI, GitHub Actions, ArgoCD, CodePipeline.
+
+**Security and identity:** HashiCorp Vault, Keycloak, Active Directory, OpenLDAP, Snyk, SonarQube, OpenSSL, Let's Encrypt / ACME, gitleaks, OWASP, secure SDLC, WebAuthn, TOTP / Email OTP MFA.
+
+**Databases:** MySQL, MariaDB, PostgreSQL, Amazon Aurora, MongoDB, Redis, Microsoft SQL Server.
+
+**Monitoring, logging, observability:** Prometheus, Grafana, AlertManager, Elastic Stack (Elasticsearch / Logstash / Kibana), Loki.
+
+**Web and mail stack experience:** NGINX, PHP-FPM, HAProxy, Apache, Postfix, Dovecot, Rspamd, OpenDKIM, Roundcube, Nextcloud, BIND9.
+
+**AI tooling experience:** Claude (Anthropic), Claude Code, ChatGPT, OpenAI API, Cursor, GitHub Copilot, Ollama, Model Context Protocol (MCP). Integrating LLM agents into engineering workflows and into customer-facing product features.
+
+**Operating systems:** Debian, Ubuntu, RHEL, Fedora, macOS, Windows Server.
+
+**Industry experience:** broadcast and streaming media, internet service providers, e-commerce, financial services, healthcare / HIPAA-graded environments, federal contracting environments.
+
+**Status and logistics:**
+- Open to senior, principal, staff, lead, and director-level roles.
+- Remote-first preferred.
+- US-based (Washington State).
+- Authorized to work in the United States without visa sponsorship.
+
+**Contact:** davestj@gmail.com · [linkedin.com/in/davestj](https://www.linkedin.com/in/davestj) · [davestj.com](https://www.davestj.com)
 
 ---
 
