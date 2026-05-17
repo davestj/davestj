@@ -35,7 +35,7 @@
 
 <!-- Profile Header with Dynamic Typing Effect -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+David+St.+John+%F0%9F%91%8B;DevSecOps+Lead+%26+Architect;20%2B+Years+of+Experience;AWS+Original+Beta+Tester+(2003)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+David+St.+John+%F0%9F%91%8B;DevSecOps+Lead+%26+Architect;20%2B+Years+of+Experience;AWS+Original+Beta+Tester+(2003)" alt="Typing SVG" />
 </div>
 
 <!-- Professional Banner -->
@@ -132,7 +132,7 @@ print(f"Profile Version: 3.0.0 | Maintained since: {me.profile_created}")
 
 <!-- GitHub Streak Stats -->
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=davestj&theme=tokyonight&hide_border=true" alt="My GitHub Streak Stats"/>
+  <img src="https://streak-stats.demolab.com/?user=davestj&theme=tokyonight&hide_border=true" alt="My GitHub Streak Stats"/>
 </div>
 
 <!-- Activity Graph -->
@@ -460,10 +460,4 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
   - Trophy service may experience intermittent availability
   - Custom badges provide reliable fallback
   - All critical metrics have redundant sources
-  
-  For future maintainers:
-  - This profile has been actively maintained since November 2023
-  - All dates in this changelog reflect actual development timeline
-  - Version 3.0.0 represents the most stable, reliable iteration
-  - Contact davestj@gmail.com for questions about implementation
 -->
