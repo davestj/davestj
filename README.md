@@ -173,36 +173,24 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 
 ## 🏆 My GitHub Trophies & Achievements
 
-<!-- Primary Trophy Display with Multiple Fallback Options -->
-<div align="center">
-  
-  <!-- I'm using the correct URL structure with proper parameters -->
-  ![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&margin-h=4&column=7&row=1)
-  
-</div>
-
-<!-- Alternative display with HTML img tag for better control -->
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&margin-h=4&column=7&row=1" alt="My GitHub Trophies" />
 </p>
 
-<!-- Detailed Trophy Breakdown - I'm showing specific trophy categories -->
-<details>
-<summary align="center"><b>🏅 Click to see detailed trophy categories</b></summary>
+### 🏅 Trophy Categories
 
 <div align="center">
 
-### 🌟 Special Achievements
+#### 🌟 Special Achievements
 ![Special Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=SECRET,SSS,SS,S)
 
-### 📊 Activity Trophies  
+#### 📊 Activity Trophies
 ![Activity Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=AAA,AA,A)
 
-### 🎯 Contribution Trophies
+#### 🎯 Contribution Trophies
 ![Contribution Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=B,C)
 
 </div>
-</details>
 
 ## 🎖️ My Verified Achievements
 
@@ -357,6 +345,7 @@ timeline
 ### AI & Prompt Engineering
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![OpenClaw](https://img.shields.io/badge/OpenClaw-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Anthropic API](https://img.shields.io/badge/Anthropic_API-181818?style=for-the-badge&logo=anthropic&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74AA9C?style=for-the-badge&logo=openai&logoColor=white)
 ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
@@ -468,6 +457,7 @@ I use AI agents as part of my normal engineering workflow — for code generatio
 ### The tools I use day-to-day
 
 - **[Claude](https://claude.ai) + [Claude Code](https://claude.com/claude-code)** *(Anthropic)* — my primary tool. End-to-end for code generation, multi-repo refactors, history operations, infrastructure provisioning, and ops. Sessions can run for hours at a time.
+- **OpenClaw** — terminal AI agent I run alongside Claude Code for parallel agentic tasks and second-pass review.
 - **[ChatGPT](https://chat.openai.com) + OpenAI API** — research, brainstorming, second-opinion validation, occasional cross-review on output from other models.
 - **[Cursor](https://cursor.com) IDE** — in-editor pair programming for dense, file-local work.
 - **[GitHub Copilot](https://github.com/features/copilot)** — autocomplete-grade help for boilerplate, tests, type definitions, repetitive structure.
