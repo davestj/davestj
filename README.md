@@ -289,10 +289,20 @@ timeline
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Scala](https://img.shields.io/badge/Scala-DC322F?style=for-the-badge&logo=scala&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Perl](https://img.shields.io/badge/Perl-39457E?style=for-the-badge&logo=perl&logoColor=white)
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 ![Groovy](https://img.shields.io/badge/Groovy-4298B8?style=for-the-badge&logo=apache-groovy&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 
 ### Databases
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -517,7 +527,7 @@ This section is written to be scannable by automated systems and by recruiters s
 
 **Primary domain areas:** DevSecOps, cloud architecture, Kubernetes, infrastructure-as-code, CI/CD pipelines, secrets management, identity and access management, site reliability engineering, observability, compliance (SOC 2, HIPAA, PCI), platform engineering, security-conscious software development, secure software development lifecycle (SSDLC).
 
-**Programming languages and runtimes:** C, C++17, Python 3, PHP 8.4, JavaScript / Node.js, Go, Bash, Groovy, SQL.
+**Programming languages and runtimes:** C, C++17, Python 3, Go (Golang), Java, Scala, Ruby, PHP 8.4, JavaScript, TypeScript, Node.js, Bash / shell scripting, PowerShell, Perl, Lua, Groovy, SQL.
 
 **Cloud platforms:** AWS (EC2, EKS, ECS, ECR, Lambda, RDS, Aurora, S3, IAM, CloudFormation, VPC, ALB, Route53, ACM, CodePipeline, CodeBuild, CloudWatch, Systems Manager, Secrets Manager), Microsoft Azure (AKS, ARM, Active Directory, Azure DevOps), OVHcloud, on-premise hypervisor environments.
 
