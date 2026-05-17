@@ -164,38 +164,25 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
   <img src="https://mcaster1.com/github/api/stats.php?user=davestj&theme=tokyonight" alt="GitHub stats — stars, forks, repos, followers, member-since"/>
 </div>
 
-<!-- GitHub Streak Stats — demolab.com (working) -->
+<!-- Self-hosted streak card — mcaster1.com/github/api/streak.php -->
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=davestj&theme=tokyonight&hide_border=true" alt="My GitHub Streak Stats"/>
+  <img src="https://mcaster1.com/github/api/streak.php?user=davestj&theme=tokyonight" alt="Contribution streak — total / current / longest"/>
 </div>
 
-<!-- Activity Graph -->
+<!-- Self-hosted activity area chart — mcaster1.com/github/api/activity.php -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=davestj&theme=tokyo-night&hide_border=true&area=true" alt="My Contribution Graph"/>
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight" alt="365-day contribution activity area chart"/>
 </div>
 
 ---
 
 ## 🏆 My GitHub Trophies & Achievements
 
+Self-hosted trophy card with custom achievements specific to my work (Celenite Stack Architect, Solo Founder, BTHL Inspector, AI-Native Engineer) — not just the standard github-profile-trophy rank list.
+
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4&margin-h=4&column=7&row=1" alt="My GitHub Trophies" />
+  <img src="https://mcaster1.com/github/api/trophy.php?user=davestj&theme=tokyonight" alt="Achievement trophies — including Mcaster1-specific custom awards" />
 </p>
-
-### 🏅 Trophy Categories
-
-<div align="center">
-
-#### 🌟 Special Achievements
-![Special Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=SECRET,SSS,SS,S)
-
-#### 📊 Activity Trophies
-![Activity Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=AAA,AA,A)
-
-#### 🎯 Contribution Trophies
-![Contribution Trophies](https://github-profile-trophy.vercel.app/?username=davestj&theme=tokyonight&no-frame=true&column=4&row=1&rank=B,C)
-
-</div>
 
 ## 🎖️ My Verified Achievements
 
@@ -363,14 +350,26 @@ timeline
 
 ## 📈 My Contribution Metrics
 
-<!-- Self-hosted top-languages card — mcaster1.com/github/api/langs.php -->
+Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to-end. Includes a couple of **novel metrics** that aren't on any standard profile generator: a **commit time-of-day heatmap** and a **Shannon-entropy polyglot index**.
+
+<!-- Self-hosted top-languages card -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/langs.php?user=davestj&theme=tokyonight&count=12" alt="Most used languages"/>
+  <img src="https://mcaster1.com/github/api/langs.php?user=davestj&theme=tokyonight&count=12" alt="Most used languages bar chart"/>
 </div>
 
-<!-- Contribution Activity Breakdown -->
+<!-- 🆕 NOVEL: Commit time-of-day heatmap — when do I actually code? -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=davestj&theme=tokyo-night&hide_border=true&area=true&custom_title=My%20Coding%20Activity" alt="Contribution Graph"/>
+  <img src="https://mcaster1.com/github/api/heatmap.php?user=davestj&theme=tokyonight" alt="When-I-Code — 7-day × 24-hour commit time heatmap (last ~90 days)"/>
+</div>
+
+<!-- 🆕 NOVEL: Polyglot Index — language breadth + Shannon-entropy diversity score -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/polyglot.php?user=davestj&theme=tokyonight" alt="Polyglot index — language count + diversity score"/>
+</div>
+
+<!-- Self-hosted contribution activity area chart -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800" alt="365-day contribution activity"/>
 </div>
 
 <!-- Profile Views Counter - Tracking since 2023 -->
@@ -380,10 +379,8 @@ timeline
 
 <!-- Activity Summary Badges -->
 <div align="center">
-  <!-- Commits this year — live from mcaster1.com/github/api/commits-year.php (replaces broken shields.io dynamic JSON) -->
   <img src="https://mcaster1.com/github/api/commits-year.php?user=davestj&year=2026&theme=tokyonight" alt="Commits in 2026"/>
   <img src="https://img.shields.io/badge/dynamic/json?color=green&label=Pull%20Requests&query=%24.total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3Adavestj%2520type%3Apr&style=for-the-badge&logo=github&logoColor=white" alt="Pull Requests"/>
-  <img src="https://img.shields.io/badge/Code%20Reviews-500%2B-purple?style=for-the-badge&logo=github&logoColor=white" alt="Code Reviews"/>
 </div>
 
 ---
