@@ -48,7 +48,7 @@
 <!-- Profile Header with Dynamic Typing Effect -->
 <div align="center">
   <a href="https://mcaster1.com/github/typing-3d/" title="Click for the live WebGL / Three.js version">
-    <img src="https://mcaster1.com/github/api/typing.php?theme=mcaster1&width=900&height=280" alt="Animated broadcast-themed banner — David St. John, DevSecOps Lead & Cloud Architect. Click for the WebGL version."/>
+    <img src="https://mcaster1.com/github/api/typing.php?theme=mcaster1&width=900&height=280&v=2026-05-17" alt="Animated broadcast-themed banner — David St. John, DevSecOps Lead & Cloud Architect. Click for the WebGL version."/>
   </a>
   <br/>
   <sub><a href="https://mcaster1.com/github/typing-3d/">🎬 View the full WebGL 3D version →</a></sub>
@@ -56,7 +56,7 @@
 
 <!-- Professional Banner -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/banner.php?text=DevSecOps+%7C+Cloud+Architecture+%7C+Automation&theme=tokyonight&width=900&height=180" alt="Header" />
+  <img src="https://mcaster1.com/github/api/banner.php?text=DevSecOps+%7C+Cloud+Architecture+%7C+Automation&theme=tokyonight&width=900&height=180&v=2026-05-17" alt="Header" />
 </div>
 
 <!-- Build Status and Contact Badges -->
@@ -165,17 +165,17 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 
 <!-- Self-hosted stats card — mcaster1.com/github/api/stats.php -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/stats.php?user=davestj&theme=tokyonight" alt="GitHub stats — stars, forks, repos, followers, member-since"/>
+  <img src="https://mcaster1.com/github/api/stats.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="GitHub stats — stars, forks, repos, followers, member-since"/>
 </div>
 
 <!-- Self-hosted streak card — mcaster1.com/github/api/streak.php -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/streak.php?user=davestj&theme=tokyonight" alt="Contribution streak — total / current / longest"/>
+  <img src="https://mcaster1.com/github/api/streak.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Contribution streak — total / current / longest"/>
 </div>
 
 <!-- Self-hosted activity area chart — mcaster1.com/github/api/activity.php -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight" alt="365-day contribution activity area chart"/>
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="365-day contribution activity area chart"/>
 </div>
 
 ---
@@ -185,7 +185,7 @@ I'm not trying to make this sound bigger than it is. It's a one-person platform 
 Self-hosted trophy card with custom achievements specific to my work (Celenite Stack Architect, Solo Founder, BTHL Inspector, AI-Native Engineer) — not just the standard github-profile-trophy rank list.
 
 <p align="center">
-  <img src="https://mcaster1.com/github/api/trophy.php?user=davestj&theme=tokyonight" alt="Achievement trophies — including Mcaster1-specific custom awards" />
+  <img src="https://mcaster1.com/github/api/trophy.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Achievement trophies — including Mcaster1-specific custom awards" />
 </p>
 
 ## 🎖️ My Verified Achievements
@@ -358,48 +358,68 @@ Self-hosted cards from `mcaster1.com/github/api/` — full pipeline I own end-to
 
 <!-- Self-hosted top-languages card -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/langs.php?user=davestj&theme=tokyonight&count=12" alt="Most used languages bar chart"/>
+  <img src="https://mcaster1.com/github/api/langs.php?user=davestj&theme=tokyonight&count=12&v=2026-05-17" alt="Most used languages bar chart"/>
 </div>
 
 <!-- 🆕 NOVEL: Commit time-of-day heatmap — when do I actually code? -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/heatmap.php?user=davestj&theme=tokyonight" alt="When-I-Code — 7-day × 24-hour commit time heatmap (last ~90 days)"/>
+  <img src="https://mcaster1.com/github/api/heatmap.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="When-I-Code — 7-day × 24-hour commit time heatmap (last ~90 days)"/>
 </div>
 
 <!-- 🆕 NOVEL: Polyglot Index — language breadth + Shannon-entropy diversity score -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/polyglot.php?user=davestj&theme=tokyonight" alt="Polyglot index — language count + diversity score"/>
+  <img src="https://mcaster1.com/github/api/polyglot.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Polyglot index — language count + diversity score"/>
 </div>
 
 <!-- Self-hosted contribution activity area chart -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800" alt="365-day contribution activity"/>
+  <img src="https://mcaster1.com/github/api/activity.php?user=davestj&theme=tokyonight&width=800&v=2026-05-17" alt="365-day contribution activity"/>
 </div>
 
 <!-- 🆕 NOVEL: Recent push activity per repo — where I'm working RIGHT NOW -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/pushes.php?user=davestj&theme=tokyonight&days=30" alt="Recent push activity per repo — last 30 days sparkline grid"/>
+  <img src="https://mcaster1.com/github/api/pushes.php?user=davestj&theme=tokyonight&days=30&v=2026-05-17" alt="Recent push activity per repo — last 30 days sparkline grid"/>
 </div>
 
 <!-- 🆕 NOVEL: GitHub Actions / CI-CD health — overall success rate + per-repo breakdown -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/workflows.php?user=davestj&theme=tokyonight" alt="GitHub Actions health — success rate, total runs, per-repo CI status"/>
+  <img src="https://mcaster1.com/github/api/workflows.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="GitHub Actions health — success rate, total runs, per-repo CI status"/>
+</div>
+
+<!-- 🆕 PR merge velocity — DORA-style time-to-merge p50/p90/mean -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/velocity.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="PR merge velocity — median / p90 / mean time to merge"/>
+</div>
+
+<!-- 🆕 Deploy frequency — releases per month bar chart -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/deploys.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Deploy frequency — releases per month timeline"/>
+</div>
+
+<!-- 🆕 Stars by repository — which projects are gaining traction -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/stars.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Stars per repository — top 10 by stargazer count"/>
+</div>
+
+<!-- 🆕 Repo topic tag cloud — domain specialization at a glance -->
+<div align="center">
+  <img src="https://mcaster1.com/github/api/topics.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="Repo topic tag cloud — domain breakdown"/>
 </div>
 
 <!-- PR + Issue activity card (self-hosted, replaces shields.io dynamic JSON) -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/prs.php?user=davestj&theme=tokyonight" alt="PRs and Issues — opened, merged, reviewed"/>
+  <img src="https://mcaster1.com/github/api/prs.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="PRs and Issues — opened, merged, reviewed"/>
 </div>
 
 <!-- 🆕 NOVEL: AI-assistance signal — honest read on how much shipping is AI-augmented -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/ai-cred.php?user=davestj&theme=tokyonight" alt="AI-assisted commit percentage with per-tool breakdown"/>
+  <img src="https://mcaster1.com/github/api/ai-cred.php?user=davestj&theme=tokyonight&v=2026-05-17" alt="AI-assisted commit percentage with per-tool breakdown"/>
 </div>
 
 <!-- Profile Views Counter (self-hosted) + Commits-this-year (self-hosted) -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/views.php?user=davestj&theme=tokyonight&label=Profile+Views" alt="Profile Views"/>
-  <img src="https://mcaster1.com/github/api/commits-year.php?user=davestj&year=2026&theme=tokyonight" alt="Commits in 2026"/>
+  <img src="https://mcaster1.com/github/api/views.php?user=davestj&theme=tokyonight&label=Profile+Views&v=2026-05-17" alt="Profile Views"/>
+  <img src="https://mcaster1.com/github/api/commits-year.php?user=davestj&year=2026&theme=tokyonight&v=2026-05-17" alt="Commits in 2026"/>
 </div>
 
 ---
@@ -615,7 +635,7 @@ This section is written to be scannable by automated systems and by recruiters s
 ## 💡 My Philosophy
 
 <div align="center">
-  <img src="https://mcaster1.com/github/api/quote.php?theme=tokyonight&width=900" alt="Philosophy quote"/>
+  <img src="https://mcaster1.com/github/api/quote.php?theme=tokyonight&width=900&v=2026-05-17" alt="Philosophy quote"/>
 </div>
 
 ---
@@ -644,7 +664,7 @@ I'm always interested in discussing DevSecOps, cloud architecture, and automatio
 
 <!-- Footer with current date context -->
 <div align="center">
-  <img src="https://mcaster1.com/github/api/banner.php?text=Thanks+for+visiting%21&theme=tokyonight&width=900&height=110" alt="Footer" />
+  <img src="https://mcaster1.com/github/api/banner.php?text=Thanks+for+visiting%21&theme=tokyonight&width=900&height=110&v=2026-05-17" alt="Footer" />
   
   <sub>📅 Last updated: 2026-05-16 21:34 PDT &nbsp;·&nbsp; Profile active since November 2023 &nbsp;·&nbsp; GitHub member since 2008</sub>
 </div>
