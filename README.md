@@ -301,30 +301,73 @@ timeline
 
 ---
 
-## 🎯 My Current Focus (August 2025)
+## 🎯 My Current Focus (2026)
 
-- 🔧 **Infrastructure as Code**: I'm deepening my expertise in Terraform modules and creating reusable infrastructure patterns
-- 🚀 **Serverless Architecture**: I'm building scalable serverless solutions with AWS Lambda and API Gateway
-- 🔒 **Security Automation**: I'm implementing DevSecOps pipelines with integrated security scanning
-- 📊 **Observability**: I'm designing comprehensive monitoring solutions with Prometheus and Grafana
-- 🎓 **Knowledge Sharing**: I'm mentoring teams on cloud-native best practices and automation
+- 📻 **[Mcaster1 Ecosystem](https://mcaster1.com)**: I'm shipping 18+ apps for broadcasters and streamers — desktop players and encoders in Qt6, DNAS streaming servers, web admin daemons, all on a single architectural pattern I built and named
+- 🏗️ **[Celenite Stack](https://mcaster1.com/celenitestack/)**: I'm refining my open architecture — a compiled C++17 daemon paired with PHP-FPM via FastCGI, single binary, single port, no reverse-proxy or sidecar soup. The "C" in Celenite is a C++ pun
+- 🛠️ **Mcaster1StackSmith**: I'm building a DevSecOps control plane for Kubernetes, KVM, containers, and bare metal — agent-pull telemetry, multi-cluster orchestration, runs on my own 5-node homelab plus public cloud
+- 🌐 **[CasterClub Community](https://casterclub.com)**: I'm operating a podcast/radio/streaming community platform — YP directory, forums, social, all served from the Mcaster1 backbone
+- 🎚️ **Mcaster1DAWCast**: I'm in alpha on a broadcaster-grade DAW with built-in DSP, AI persona system, dual-bus routing, and integrated stream encoding
+- 📦 **Public-by-Default**: I'm open-sourcing the full ecosystem across 50+ repositories on GitHub — every product, every config example, every architectural decision
 
 ---
 
 ## 📚 My Latest Projects
 
-<!-- As of August 2025, showcasing my profile repository and work categories -->
-<div align="center">
-  
-  ### 🚀 Featured Work Categories
-  
-  <!-- I'm using static badges that describe my work areas -->
-  [![Infrastructure as Code](https://img.shields.io/badge/Infrastructure%20as%20Code-Terraform%20|%20CloudFormation-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)](https://github.com/davestj?tab=repositories&q=terraform)
-  [![Container Orchestration](https://img.shields.io/badge/Container%20Orchestration-Kubernetes%20|%20ECS-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://github.com/davestj?tab=repositories&q=kubernetes)
-  [![CI/CD Pipelines](https://img.shields.io/badge/CI%2FCD%20Pipelines-Jenkins%20|%20GitLab-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://github.com/davestj?tab=repositories&q=jenkins)
-  [![Configuration Management](https://img.shields.io/badge/Config%20Management-Ansible%20|%20Chef-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://github.com/davestj?tab=repositories&q=ansible)
-  
-</div>
+Every project below is built on the **[Celenite Stack](https://mcaster1.com/celenitestack/)** pattern (C++17 daemon + PHP-FPM via FastCGI). All public, all real, all in active development.
+
+### 📻 Broadcasting & Streaming Apps
+- **[Mcaster1AMP](https://github.com/davestj/Mcaster1AMP)** — Qt6 desktop media player for broadcasters (macOS / Linux / Windows)
+- **[mcaster1dnas](https://github.com/davestj/mcaster1dnas)** — DNAS streaming server, Icecast2-derived, ICY-META v2 protocol
+- **[Mcaster1DSPEncoder](https://github.com/davestj/Mcaster1DSPEncoder)** — DSP-chain audio encoder, multi-platform, YAML-driven
+- **[Mcaster1AudioPipe](https://github.com/davestj/Mcaster1AudioPipe)** — Audio routing & patchbay with DSP effects rack
+- **[Mcaster1StreamProxy](https://github.com/davestj/Mcaster1StreamProxy)** — Go-based ICY stream proxy with TLS termination
+- **[Mcaster1Studio](https://github.com/davestj/Mcaster1Studio)** — Broadcasting studio suite, AI persona system
+- **[Mcaster1DAWCast](https://github.com/davestj/Mcaster1DAWCast)** *(alpha)* — Broadcaster-grade DAW with dual-bus routing & integrated encoding
+
+### 🎙️ Platform Daemons & Web Backends
+- **[Mcaster1BackDraft](https://github.com/davestj/Mcaster1BackDraft)** — C++17 security admin daemon with PHP-FPM web UI
+- **[Mcaster1ADZMan](https://github.com/davestj/Mcaster1ADZMan)** — Ad serving / insertion manager
+- **[Mcaster1Chatter](https://github.com/davestj/Mcaster1Chatter)** — Chat & IRC backbone for broadcaster communities
+- **[Mcaster1MailCaster](https://github.com/davestj/Mcaster1MailCaster)** — Email + notification system
+- **[Mcaster1YPMan](https://github.com/davestj/Mcaster1YPMan)** — Public station directory (YP) backend
+- **[Mcaster1InstallSystem](https://github.com/davestj/Mcaster1InstallSystem)** — Cross-platform installer builder (DMG / PKG / EXE)
+
+### 🛠️ DevSecOps Control Plane
+- **[Mcaster1StackSmith](https://github.com/davestj/Mcaster1StackSmith)** — K8s + KVM + container orchestration with agent-pull telemetry across homelab + public cloud
+
+### 🔧 BTHL Inspector Tools
+- **[BTHL-SpectraSentry](https://github.com/davestj/BTHL-SpectraSentry)** — RF spectrum analysis & monitoring
+- **[BTHL-SpiritBox](https://github.com/davestj/BTHL-SpiritBox)** — Audio capture & paranormal-research signal analyzer
+
+### 🌐 Operating Platforms
+- **[mcaster1.com](https://mcaster1.com)** — Mcaster1 ecosystem product hub & documentation
+- **[casterclub.com](https://casterclub.com)** — Podcast / radio / streaming community: YP, forums, db, social
+- **[mediacast.one](https://mediacast.one)** / **[mediacast.studio](https://mediacast.studio)** / **[mediacast1.ai](https://mediacast1.ai)** — Mcaster1 product satellites
+
+---
+
+## 🚀 Featured Work Categories
+
+The Mcaster1 ecosystem isn't a single product — it's an architecture pattern applied across five distinct domains. Here's what I'm building and why it matters.
+
+### 🎙️ Broadcasting & Streaming Infrastructure
+The radio / podcast / streaming space has been running on the same Icecast + Shoutcast + SHOUTcast2 stack for two decades. Latency, metadata, transcoding, and YP-directory discovery are all stuck in 2008. I'm modernizing the entire chain with ICY-META v2.x, native HTTPS encoders, sub-second metadata propagation, Opus/FLAC support, and a YAML-driven config model — backwards compatible with existing players, forward compatible with where the format needs to go. Built in C++17 with Qt6 frontends. Repos: `Mcaster1AMP`, `mcaster1dnas`, `Mcaster1DSPEncoder`, `Mcaster1AudioPipe`, `Mcaster1StreamProxy`, `Mcaster1Studio`, `Mcaster1DAWCast`.
+
+### 🏗️ C++17 Application Architecture — the Celenite Stack
+Every backend in the ecosystem is built on a pattern I named the **[Celenite Stack](https://mcaster1.com/celenitestack/)**: a compiled C++17 daemon with its own embedded HTTP server doing TLS termination, static-file serving, and FastCGI bridging to PHP-FPM for the web UI. Single binary. Single port. No nginx, no Apache, no reverse-proxy sidecar. One systemd unit, one config file, one log path. The "C" in Celenite is a C++ pun. Repos: `Mcaster1BackDraft`, `Mcaster1ADZMan`, `Mcaster1Chatter`, `Mcaster1MailCaster`, `Mcaster1YPMan`.
+
+### 🛠️ DevSecOps Control Plane — Mcaster1StackSmith
+I run a 5-node KVM homelab plus production cloud across OVH east/west, all managed by a control plane I built myself. **[Mcaster1StackSmith](https://github.com/davestj/Mcaster1StackSmith)** handles Kubernetes cluster provisioning, KVM VM lifecycle, container orchestration, BIND9 DNS management, Active Directory join/unjoin, certificate distribution, agent-based fleet telemetry, and Vault-backed secrets — all in one place. Agents push heartbeats every 60 seconds; the orchestrator pulls metrics on a timer. No Airflow, no Prefect, no Dagster — StackSmith *is* the orchestrator.
+
+### 🖥️ Cross-Platform Desktop Apps
+Qt6 cross-platform builds for macOS (universal ARM64/x86), Linux (Debian/Ubuntu/RHEL), and Windows. Native installers (DMG, PKG, EXE) generated by my own `Mcaster1InstallSystem` tool. Code-signing, notarization, auto-update manifests, beta channels. Built from a single source tree with per-platform DSP code paths and OS-specific audio backends (CoreAudio, ALSA/PulseAudio, WASAPI).
+
+### 🔐 Infrastructure as Code & Multi-Site Operations
+17 production websites and counting, deployed via Ansible from a single playbook structure (`diff.yml` → `pull.yml` → `push.yml`). Every site has identical inventory layout. SSL certs across the fleet (commercial wildcards + Let's Encrypt). BIND9 primary/secondary with TSIG zone transfers. Capistrano for atomic release deploys with rollback. AD-backed SSO across the ecosystem via Keycloak. Every config-as-code, every secret in `ansible-vault` or HashiCorp Vault — never inline.
+
+### 📦 Public-by-Default Open Source
+50+ public repositories on GitHub. Every product, every config example, every architectural decision in the open. License keys gated, source code free. Two-decade career, now shipping in plain sight.
 
 ---
 
